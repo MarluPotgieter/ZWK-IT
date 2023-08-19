@@ -1,0 +1,60 @@
+unit Aktw7_Nr6_Bl46_SteneGewig_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, ComCtrls, Vcl.Mask;
+
+type
+  TfrmStene = class(TForm)
+    ledStone: TLabeledEdit;
+    ledMax: TLabeledEdit;
+    btnVerwerk: TButton;
+    redAfvoer: TRichEdit;
+    procedure btnVerwerkClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmStene: TfrmStene;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmStene.btnVerwerkClick(Sender: TObject);
+var rStone, rMax, rSafe, rMargin : Real;
+    bSafe : Boolean;
+
+begin
+
+  rStone := StrToFloat(ledStone.Text);
+  rMax := StrToFloat(ledMax.Text);
+
+  rMargin := 5/100;
+
+  rSafe := rStone * rMargin;
+
+  if rSafe < rMax then
+
+  begin
+  redAfvoer.Lines.Add('The load is safe');
+  end
+
+  else
+
+  begin
+   redAfvoer.Lines.Add('The load is not safe');
+  end;
+
+
+
+
+
+end;
+
+end.

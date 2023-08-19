@@ -1,0 +1,45 @@
+unit frmShowHeight_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
+  Vcl.Imaging.jpeg, Vcl.Buttons;
+
+type
+  TfrmShowHeight = class(TForm)
+    btnShow: TButton;
+    btnHide: TButton;
+    imgPicture: TImage;
+    btn1: TBitBtn;
+    procedure btnShowClick(Sender: TObject);
+    procedure btnHideClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmShowHeight: TfrmShowHeight;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmShowHeight.btnHideClick(Sender: TObject);
+begin
+btnShow.Enabled := True;
+btnHide.Enabled := False;
+imgPicture.Visible := False;
+end;
+
+procedure TfrmShowHeight.btnShowClick(Sender: TObject);
+begin
+btnShow.Enabled := False;
+btnHide.Enabled := True;
+imgPicture.Visible := True;
+end;
+
+end.

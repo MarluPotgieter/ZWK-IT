@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/02/15 08:29:17.000.555,=D:\My Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2023/02/15 08:32:15.000.261,D:\My Documents\Embarcadero\Studio\Projects\Unit3.pas=J:\IT\IT Gr10 - 2023\Aktw5 Nr1 Bl193 Vaidate Cellphone Numbers\Aktw5_Nr1_Bl193_Validate_Cellphon_Numbers_u.pas</Transaction>
+    <Transaction>2023/02/15 08:32:15.000.261,D:\My Documents\Embarcadero\Studio\Projects\Unit3.dfm=J:\IT\IT Gr10 - 2023\Aktw5 Nr1 Bl193 Vaidate Cellphone Numbers\Aktw5_Nr1_Bl193_Validate_Cellphon_Numbers_u.dfm</Transaction>
+    <Transaction>2023/02/15 08:32:24.000.088,D:\My Documents\Embarcadero\Studio\Projects\Project3.dproj=J:\IT\IT Gr10 - 2023\Aktw5 Nr1 Bl193 Vaidate Cellphone Numbers\Aktw5_Nr1_Bl193_Validate_Cellphon_Numbers_p.dproj</Transaction>
+    <Transaction>2023/02/15 09:02:09.106,J:\IT\IT Gr10 - 2023\Aktw5 Nr1 Bl193 Validate Cellphone Numbers\Aktw5_Nr1_Bl193_Validate_Cellphone_Numbers_u.dfm=J:\IT\IT Gr10 - 2023\Aktw5 Nr1 Bl193 Validate Cellphone Numbers\Aktw5_Nr1_Bl193_Validate_Cellphon_Numbers_u.dfm</Transaction>
+    <Transaction>2023/02/15 09:02:09.106,J:\IT\IT Gr10 - 2023\Aktw5 Nr1 Bl193 Validate Cellphone Numbers\Aktw5_Nr1_Bl193_Validate_Cellphone_Numbers_u.pas=J:\IT\IT Gr10 - 2023\Aktw5 Nr1 Bl193 Validate Cellphone Numbers\Aktw5_Nr1_Bl193_Validate_Cellphon_Numbers_u.pas</Transaction>
+    <Transaction>2023/02/15 09:02:17.858,J:\IT\IT Gr10 - 2023\Aktw5 Nr1 Bl193 Validate Cellphone Numbers\Aktw5_Nr1_Bl193_Validate_Cellphone_Numbers_p.dproj=J:\IT\IT Gr10 - 2023\Aktw5 Nr1 Bl193 Validate Cellphone Numbers\Aktw5_Nr1_Bl193_Validate_Cellphon_Numbers_p.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

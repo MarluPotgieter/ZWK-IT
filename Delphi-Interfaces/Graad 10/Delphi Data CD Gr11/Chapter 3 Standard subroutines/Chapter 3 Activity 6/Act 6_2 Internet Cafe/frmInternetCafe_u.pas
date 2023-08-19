@@ -1,0 +1,52 @@
+unit frmInternetCafe_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls, ExtCtrls, Math, Buttons;
+
+type
+  TfrmInternetCafe = class(TForm)
+    lblHeading: TLabel;
+    pnlOn: TPanel;
+    pnlOff: TPanel;
+    lblOnHour: TLabel;
+    lblOnMin: TLabel;
+    lblOffHour: TLabel;
+    lblOffMin: TLabel;
+    lblClients: TLabel;
+    lblInDay: TLabel;
+    lblAvgSession: TLabel;
+    lblBusyFor: TLabel;
+    lblCostSes: TLabel;
+    edtOnHour: TEdit;
+    edtOnMin: TEdit;
+    edtOffHour: TEdit;
+    edtOffMin: TEdit;
+    btnCalculate: TButton;
+    btnReset: TButton;
+    lblNumClients: TLabel;
+    lblDayTakings: TLabel;
+    lblAveTakings: TLabel;
+    lblTime: TLabel;
+    lblCost: TLabel;
+    bmbClose: TBitBtn;
+    Label6: TLabel;
+    Label7: TLabel;
+  private
+    { Private declarations }
+
+  public
+    { Public declarations }
+  end;
+
+var
+  frmInternetCafe: TfrmInternetCafe;
+
+implementation
+
+{$R *.DFM}
+
+
+end.

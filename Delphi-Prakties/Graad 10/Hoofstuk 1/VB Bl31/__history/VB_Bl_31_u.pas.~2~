@@ -1,0 +1,30 @@
+unit VB_Bl_31_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls;
+
+type
+  TfrmTrafficLight = class(TForm)
+    btnYellow: TButton;
+    btn2: TButton;
+    btn3: TButton;
+    shp1: TShape;
+    shp2: TShape;
+    shp3: TShape;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTrafficLight: TfrmTrafficLight;
+
+implementation
+
+{$R *.dfm}
+
+end.

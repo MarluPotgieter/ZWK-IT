@@ -1,0 +1,109 @@
+object frmAquarium: TfrmAquarium
+  Left = 0
+  Top = 0
+  Caption = 'Aquarium'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object ledHeight: TLabeledEdit
+    Left = 8
+    Top = 145
+    Width = 121
+    Height = 23
+    EditLabel.Width = 69
+    EditLabel.Height = 15
+    EditLabel.Caption = 'Height (mm)'
+    TabOrder = 0
+    Text = '500'
+  end
+  object ledWidth: TLabeledEdit
+    Left = 8
+    Top = 90
+    Width = 121
+    Height = 23
+    EditLabel.Width = 65
+    EditLabel.Height = 15
+    EditLabel.Caption = 'Width (mm)'
+    TabOrder = 1
+    Text = '500'
+  end
+  object ledLength: TLabeledEdit
+    Left = 8
+    Top = 40
+    Width = 121
+    Height = 23
+    EditLabel.Width = 70
+    EditLabel.Height = 15
+    EditLabel.Caption = 'Length (mm)'
+    TabOrder = 2
+    Text = '500'
+  end
+  object btnCalculate: TButton
+    Left = 240
+    Top = 39
+    Width = 75
+    Height = 25
+    Caption = 'Calculate'
+    TabOrder = 3
+    OnClick = btnCalculateClick
+  end
+  object btnUKGallon: TButton
+    Left = 104
+    Top = 200
+    Width = 75
+    Height = 25
+    Caption = 'UK Gallon'
+    TabOrder = 4
+    OnClick = btnUKGallonClick
+  end
+  object btnUsGallon: TButton
+    Left = 200
+    Top = 200
+    Width = 75
+    Height = 25
+    Caption = 'US Gallon'
+    TabOrder = 5
+    OnClick = btnUsGallonClick
+  end
+  object bmbClose: TBitBtn
+    Left = 240
+    Top = 70
+    Width = 75
+    Height = 25
+    Kind = bkClose
+    NumGlyphs = 2
+    TabOrder = 6
+  end
+  object bmbClear: TBitBtn
+    Left = 240
+    Top = 101
+    Width = 75
+    Height = 25
+    Caption = '&Clear'
+    Kind = bkRetry
+    NumGlyphs = 2
+    TabOrder = 7
+    OnClick = bmbClearClick
+  end
+  object redAfvoer: TRichEdit
+    Left = 8
+    Top = 240
+    Width = 608
+    Height = 193
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    Lines.Strings = (
+      '')
+    ParentFont = False
+    TabOrder = 8
+  end
+end

@@ -1,0 +1,35 @@
+unit frmCalcSMSCost_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, ExtCtrls, StdCtrls, Buttons;
+
+type
+  TfrmSmsCalculator = class(TForm)
+    btnCalc: TButton;
+    pnlOutput: TPanel;
+    bmbClose: TBitBtn;
+    procedure btnCalcClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSmsCalculator: TfrmSmsCalculator;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmSmsCalculator.btnCalcClick(Sender: TObject);
+begin
+
+  ShowMessage('Enter Your message');
+
+end;
+
+end.

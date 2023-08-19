@@ -1,0 +1,89 @@
+unit J_Joubert_PAT_Fase2_Met_Tabsheets_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.Menus, Vcl.StdCtrls, Vcl.ComCtrls;
+
+type
+  TfrmSnoepie = class(TForm)
+    mmeSnoepie: TMainMenu;
+    Welkom1: TMenuItem;
+    Welkom2: TMenuItem;
+    Opsomming1: TMenuItem;
+    Inteken1: TMenuItem;
+    NaVerkope1: TMenuItem;
+    NaOpsomming1: TMenuItem;
+    NaOpsomming2: TMenuItem;
+    NaVerkope2: TMenuItem;
+    NaVerkope3: TMenuItem;
+    redAfvoer: TRichEdit;
+    btnVertoonTL: TButton;
+    btnStoorTL: TButton;
+    procedure NaVerkope1Click(Sender: TObject);
+    procedure Inteken1Click(Sender: TObject);
+    procedure NaOpsomming1Click(Sender: TObject);
+    procedure NaOpsomming2Click(Sender: TObject);
+    procedure NaVerkope2Click(Sender: TObject);
+    procedure NaVerkope3Click(Sender: TObject);
+    procedure btnVertoonTLClick(Sender: TObject);
+    procedure btnStoorTLClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmSnoepie: TfrmSnoepie;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmSnoepie.btnStoorTLClick(Sender: TObject);
+begin
+  redAfvoer.Clear;
+  redAfvoer.Lines.Add('DATUM' + #9 + DateToStr(Date()));
+  redAfvoer.Lines.Add('');
+  redAfvoer.Lines.Add('2 X Koeldranke' + #9 + 'R16.98');
+  redAfvoer.Lines.SaveToFile('Kasregisterstrokie.txt');
+end;
+
+procedure TfrmSnoepie.btnVertoonTLClick(Sender: TObject);
+begin
+ redAfvoer.Lines.LoadFromFile('Pryse.txt');
+end;
+
+procedure TfrmSnoepie.Inteken1Click(Sender: TObject);
+begin
+  //
+end;
+
+procedure TfrmSnoepie.NaOpsomming1Click(Sender: TObject);
+begin
+  //
+end;
+
+procedure TfrmSnoepie.NaOpsomming2Click(Sender: TObject);
+begin
+  //
+end;
+
+procedure TfrmSnoepie.NaVerkope1Click(Sender: TObject);
+begin
+  //
+end;
+
+procedure TfrmSnoepie.NaVerkope2Click(Sender: TObject);
+begin
+  //
+end;
+
+procedure TfrmSnoepie.NaVerkope3Click(Sender: TObject);
+begin
+   //
+end;
+
+end.

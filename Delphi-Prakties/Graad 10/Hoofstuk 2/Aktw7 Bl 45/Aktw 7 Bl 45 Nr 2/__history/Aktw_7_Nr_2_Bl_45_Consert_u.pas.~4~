@@ -1,0 +1,52 @@
+unit Aktw_7_Nr_2_Bl_45_Consert_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.ComCtrls;
+
+type
+  TfrmConsert = class(TForm)
+    lblAdults: TLabel;
+    lblChildren: TLabel;
+    edtAdults: TEdit;
+    edtChildren: TEdit;
+    btnCalculate: TButton;
+    redAfoer: TRichEdit;
+    procedure btnCalculateClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmConsert: TfrmConsert;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmConsert.btnCalculateClick(Sender: TObject);
+
+var rAdults, rChildren, rPriceA, rPriceC, rTotA, rTotC, rTot : Real;
+
+begin
+    rAdults := StrToFloat(edtAdults.Text);
+    rChildren := StrToFloat(edtChildren.Text);
+
+    rPriceA := 150;
+    rPriceC := 80;
+
+    rTotA := rAdults * rPriceA;
+    rTotC := rChildren * rPriceC;
+
+    rTot := rTotA + rTotC;
+
+    redAfoer.Lines.Add('Total for Adults is :' + #9 + FloatToStrF(rTotA,ffCurrency,10,2));
+    redAfoer.Lines.Add('Total for Children is :' + #9 + FloatToStrF(rTotC,ffCurrency,10,2));
+    redAfoer.Lines.Add('Total price is :' + #9 + FloatToStrF(rTot,ffCurrency,10,2));
+end;
+
+end.

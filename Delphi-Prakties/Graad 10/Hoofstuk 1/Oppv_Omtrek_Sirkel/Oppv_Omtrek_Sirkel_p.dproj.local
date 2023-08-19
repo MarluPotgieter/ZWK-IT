@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/16 12:53:37.000.745,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 12:54:39.000.136,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/24 12:55:07.000.896,C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas=Z:\Graad 10\IT1015\KW1\Oppv_Omtrek_Sirkel_u.pas</Transaction>
+    <Transaction>2023/01/24 12:55:07.000.896,C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.dfm=Z:\Graad 10\IT1015\KW1\Oppv_Omtrek_Sirkel_u.dfm</Transaction>
+    <Transaction>2023/01/24 12:55:25.000.830,C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Project1.dproj=Z:\Graad 10\IT1015\KW1\Oppv_Omtrek_Sirkel_p.dproj</Transaction>
+    <Transaction>2023/01/26 14:00:31.280,F:\Delphi\Oppv_Omtrek_Sirkel_u.pas=Z:\Graad 10\IT1015\KW1\Oppv_Omtrek_Sirkel\Oppv_Omtrek_Sirkel_u.pas</Transaction>
+    <Transaction>2023/01/26 14:00:31.280,F:\Delphi\Oppv_Omtrek_Sirkel_u.dfm=Z:\Graad 10\IT1015\KW1\Oppv_Omtrek_Sirkel\Oppv_Omtrek_Sirkel_u.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

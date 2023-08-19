@@ -1,0 +1,42 @@
+unit frmValidReal_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+type
+  TfrmValidReal = class(TForm)
+    edtReal: TEdit;
+    lblMsg: TLabel;
+    btnValidate: TButton;
+    pnlResult: TPanel;
+    procedure btnValidateClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmValidReal: TfrmValidReal;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmValidReal.btnValidateClick(Sender: TObject);
+var rGetal : Real;
+    sGetal : String;
+    iKode  : Integer;
+begin
+  Try
+    Val(sGetal,rGetal,iKode);
+    ShowMessage('iKode = ' + IntToStr(iKode));
+  Except
+    pnlResult.Caption := sGetal + ' is nie ''n reële getal nie';
+  End;
+end;
+
+end.

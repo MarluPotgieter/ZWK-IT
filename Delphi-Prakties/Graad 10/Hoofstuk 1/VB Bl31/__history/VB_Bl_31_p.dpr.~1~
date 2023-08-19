@@ -1,0 +1,14 @@
+program VB_Bl_31_p;
+
+uses
+  Vcl.Forms,
+  VB_Bl_31_u in 'VB_Bl_31_u.pas' {Form1};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.Run;
+end.

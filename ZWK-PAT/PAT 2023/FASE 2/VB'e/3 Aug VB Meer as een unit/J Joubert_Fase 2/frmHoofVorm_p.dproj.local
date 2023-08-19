@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2023/08/03 09:38:06.665,=J:\IT\IT GR11 - 2023\KW3\Hfst9 Aktw2 DBNavigator\Win32\Debug\Unit1.pas</Transaction>
+    <Transaction>2023/08/03 09:41:24.338,J:\IT\IT Gr10 - 2023\PAT 2023\J Joubert_Fase 2\frmHoofVorm_u.pas=J:\IT\IT GR11 - 2023\KW3\Hfst9 Aktw2 DBNavigator\Win32\Debug\Unit1.pas</Transaction>
+    <Transaction>2023/08/03 09:41:24.338,J:\IT\IT Gr10 - 2023\PAT 2023\J Joubert_Fase 2\frmHoofVorm_u.dfm=J:\IT\IT GR11 - 2023\KW3\Hfst9 Aktw2 DBNavigator\Win32\Debug\Unit1.dfm</Transaction>
+    <Transaction>2023/08/03 09:41:44.371,J:\IT\IT Gr10 - 2023\PAT 2023\J Joubert_Fase 2\frmHoofVorm_p.dproj=J:\IT\IT GR11 - 2023\KW3\Hfst9 Aktw2 DBNavigator\Win32\Debug\Project1.dproj</Transaction>
+    <Transaction>2023/08/03 09:42:26.368,=J:\IT\IT Gr10 - 2023\PAT 2023\J Joubert_Fase 2\Unit1.pas</Transaction>
+    <Transaction>2023/08/03 09:43:25.273,=J:\IT\IT Gr10 - 2023\PAT 2023\J Joubert_Fase 2\Unit1.pas</Transaction>
+    <Transaction>2023/08/03 09:45:29.369,J:\IT\IT Gr10 - 2023\PAT 2023\J Joubert_Fase 2\frmVerwerkVorm_u.dfm=J:\IT\IT Gr10 - 2023\PAT 2023\J Joubert_Fase 2\Unit1.dfm</Transaction>
+    <Transaction>2023/08/03 09:45:29.369,J:\IT\IT Gr10 - 2023\PAT 2023\J Joubert_Fase 2\frmVerwerkVorm_u.pas=J:\IT\IT Gr10 - 2023\PAT 2023\J Joubert_Fase 2\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

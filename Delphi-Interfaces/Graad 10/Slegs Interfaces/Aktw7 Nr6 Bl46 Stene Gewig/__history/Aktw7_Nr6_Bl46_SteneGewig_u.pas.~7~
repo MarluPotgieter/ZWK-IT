@@ -1,0 +1,56 @@
+unit Aktw7_Nr6_Bl46_SteneGewig_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls, ComCtrls;
+
+type
+  TfrmStene = class(TForm)
+    ledEenSteen: TLabeledEdit;
+    ledLaaiGewig: TLabeledEdit;
+    btnVerwerk: TButton;
+    redAfvoer: TRichEdit;
+    procedure btnVerwerkClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmStene: TfrmStene;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmStene.btnVerwerkClick(Sender: TObject);
+var rSteen, rVoertuig, rTot, r5Pers : Real;
+    iAant, iBenodig, iTot_Veilig : Integer;
+begin
+  {Toevoer}
+  rSteen := StrToFloat(ledEenSteen.Text);      //Gewig per steen (in kg)
+  rVoertuig := StrToFloat(ledLaaiGewig.Text);  //Gewig per steen (in Ton)
+  iBenodig := StrToInt(InputBox('AANTAL STENE BENODIG','Tik aantal stene benodig in',''));
+
+  {Verwerking}
+  rTot := Trunc((rVoertuig*1000)/rSteen);
+  r5Pers := Trunc(rTot*0.05) + 1;
+  iTot_Veilig := Trunc(rTot - r5Pers);
+  if (iBenodig > iTot_Veilig)
+  then iAant := iTot_Veilig
+  else
+    begin
+
+    end;
+
+
+  {Afvoer}
+  redAfvoer.Lines.Add(FloatToStr(rTot));
+  redAfvoer.Lines.Add(FloatToStr(r5Pers));
+
+end;
+
+end.

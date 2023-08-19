@@ -1,0 +1,12 @@
+Surname, Name, Date of birth
+De Wet, Abrie, 19850721
+Smith, Rowan, 19841015
+Wang, Lee, 19830531
+Tuto, Kabelo, 19851024
+Van Heerden, Susan, 19860515
+Sandton, Dale, 19851020
+Li, Mary, 19840214
+Moodley, Wesley, 19861127
+Molele, Frank, 19870605
+Nel, Deidre, 19860131
+

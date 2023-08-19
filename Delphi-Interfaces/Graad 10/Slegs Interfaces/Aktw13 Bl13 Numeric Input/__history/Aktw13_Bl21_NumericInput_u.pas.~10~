@@ -1,0 +1,55 @@
+unit Aktw13_Bl21_NumericInput_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Spin;
+
+type
+  TfrmCalculator = class(TForm)
+    sedValue1: TSpinEdit;
+    sedValue2: TSpinEdit;
+    btnAdd: TButton;
+    btnSubtract: TButton;
+    btnMultiply: TButton;
+    btnDivision: TButton;
+    edtResult: TEdit;
+    procedure btnAddClick(Sender: TObject);
+    procedure btnSubtractClick(Sender: TObject);
+    procedure btnMultiplyClick(Sender: TObject);
+    procedure btnDivisionClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmCalculator: TfrmCalculator;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmCalculator.btnAddClick(Sender: TObject);
+begin
+  //
+end;
+
+procedure TfrmCalculator.btnDivisionClick(Sender: TObject);
+begin
+  //
+end;
+
+procedure TfrmCalculator.btnMultiplyClick(Sender: TObject);
+begin
+  //
+end;
+
+procedure TfrmCalculator.btnSubtractClick(Sender: TObject);
+begin
+  //
+end;
+
+end.

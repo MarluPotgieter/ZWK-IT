@@ -1,0 +1,4 @@
+object dmSnoepie: TdmSnoepie
+  Height = 480
+  Width = 640
+end

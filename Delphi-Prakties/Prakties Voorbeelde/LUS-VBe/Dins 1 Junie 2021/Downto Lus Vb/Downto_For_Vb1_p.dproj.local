@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/06/01 14:39:06.314.pas,D:\My Documents\RAD Studio\Projects\Unit29.pas=J:\IT\IT GR10 8ste VAK\LUS-VBe\For Lus Vb1\For_Vb1_u.pas</Transaction>
+    <Transaction>2021/06/01 14:39:06.314.dfm,D:\My Documents\RAD Studio\Projects\Unit29.dfm=J:\IT\IT GR10 8ste VAK\LUS-VBe\For Lus Vb1\For_Vb1_u.dfm</Transaction>
+    <Transaction>2021/06/01 14:39:16.173.dproj,D:\My Documents\RAD Studio\Projects\Project27.dproj=J:\IT\IT GR10 8ste VAK\LUS-VBe\For Lus Vb1\For_Vb1_p.dproj</Transaction>
+    <Transaction>2021/06/01 14:56:01.312.pas,J:\IT\IT GR10 8ste VAK\LUS-VBe\For Lus Vb1\For_Vb1_u.pas=J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\For_Downto_Lus_Vb_u.pas</Transaction>
+    <Transaction>2021/06/01 14:56:01.312.dfm,J:\IT\IT GR10 8ste VAK\LUS-VBe\For Lus Vb1\For_Vb1_u.dfm=J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\For_Downto_Lus_Vb_u.dfm</Transaction>
+    <Transaction>2021/06/02 11:16:59.582.pas,J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\For_Downto_Lus_Vb_u.pas=J:\IT\IT GR10 8ste VAK\LUS-VBe\For Lus Vb1\For_Vb1_u.pas</Transaction>
+    <Transaction>2021/06/02 11:16:59.582.dfm,J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\For_Downto_Lus_Vb_u.dfm=J:\IT\IT GR10 8ste VAK\LUS-VBe\For Lus Vb1\For_Vb1_u.dfm</Transaction>
+    <Transaction>2021/06/02 11:17:10.170.dproj,J:\IT\IT GR10 8ste VAK\LUS-VBe\For Lus Vb1\For_Vb1_p.dproj=J:\IT\IT GR10 8ste VAK\LUS-VBe\For Lus Vb1\For_Vb1_p.dproj</Transaction>
+    <Transaction>2021/06/02 11:20:51.159.pas,J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\For_Vb1_u.pas=J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\Downto_For_Vb1_u.pas</Transaction>
+    <Transaction>2021/06/02 11:20:51.159.dfm,J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\For_Vb1_u.dfm=J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\Downto_For_Vb1_u.dfm</Transaction>
+    <Transaction>2021/06/02 11:21:07.222.dproj,J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\For_Vb1_p.dproj=J:\IT\IT GR10 8ste VAK\LUS-VBe\Downto Lus Vb\Downto_For_Vb1_p.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

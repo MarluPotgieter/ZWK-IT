@@ -1,0 +1,53 @@
+object frmStene: TfrmStene
+  Left = 0
+  Top = 0
+  Caption = 'Bepaal aantal Stene wat vervoer kan word'
+  ClientHeight = 358
+  ClientWidth = 398
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ledEenSteen: TLabeledEdit
+    Left = 56
+    Top = 32
+    Width = 121
+    Height = 21
+    EditLabel.Width = 120
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Een Steen se gewig (kg):'
+    TabOrder = 0
+  end
+  object ledLaaiGewig: TLabeledEdit
+    Left = 56
+    Top = 72
+    Width = 121
+    Height = 21
+    EditLabel.Width = 149
+    EditLabel.Height = 13
+    EditLabel.Caption = 'Laai-Gewig van voertuig (Ton):'
+    TabOrder = 1
+  end
+  object pnlAfvoer: TPanel
+    Left = 40
+    Top = 160
+    Width = 249
+    Height = 169
+    BevelInner = bvLowered
+    BevelWidth = 5
+    TabOrder = 2
+  end
+  object btnVerwerk: TButton
+    Left = 128
+    Top = 112
+    Width = 75
+    Height = 25
+    Caption = '&Verwerk'
+    TabOrder = 3
+  end
+end

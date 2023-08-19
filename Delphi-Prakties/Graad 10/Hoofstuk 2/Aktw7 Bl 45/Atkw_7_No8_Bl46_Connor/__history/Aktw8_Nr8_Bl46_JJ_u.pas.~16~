@@ -1,0 +1,83 @@
+unit Aktw8_Nr8_Bl46_JJ_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Buttons, StdCtrls, ComCtrls, ExtCtrls, Vcl.Mask;
+
+  const
+  CookedM = 385; SideDish = 145; Salad = 120; Desert = 190;
+type
+  TfrmFood = class(TForm)
+    btnCalculate: TButton;
+    ledWeight: TLabeledEdit;
+    redtOutput: TRichEdit;
+    bmbReset: TBitBtn;
+    bmbClose: TBitBtn;
+    grpDishes: TGroupBox;
+    rbCookedM: TRadioButton;
+    rbSalad: TRadioButton;
+    rbSideDish: TRadioButton;
+    rbDesert: TRadioButton;
+    procedure btnCalculateClick(Sender: TObject);
+  private
+    iCookedM, iSideDish, iSalad, iDesert, iAdult, iRest : Integer;
+  public
+    { Public declarations }
+  end;
+
+var
+  frmFood: TfrmFood;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmFood.btnCalculateClick(Sender: TObject);
+begin
+redtOutput.Clear;
+  if rbCookedM.Checked
+    then
+    begin
+    iCookedM := StrToInt(ledWeight.Text);
+    iAdult := iCookedM div CookedM;
+    iRest := iCookedM mod CookedM;
+    redtOutput.Lines.Add(IntToStr(iCookedM) + 'g Of Food Can Make ' + IntToStr(iAdult) +
+    'Cooked Meals With ' + IntToStr(iRest) + 'g As Leftovers');
+    end;
+
+  if rbSalad.Checked
+   then
+    begin
+    iSalad := StrToInt(ledWeight.Text);
+    iAdult := iSalad div Salad;
+    iRest := iSalad mod Salad;
+    redtOutput.Lines.Add(IntToStr(iSalad) + 'g Of Food Can Make ' + IntToStr(iAdult) +
+    'Salads With ' + IntToStr(iRest) + 'g As Leftovers');
+    end;
+
+  if rbSideDish.Checked
+   then
+       begin
+    iSideDish := StrToInt(ledWeight.Text);
+    iAdult := iSideDish div SideDish;
+    iRest := iSideDish mod SideDish;
+    redtOutput.Lines.Add(IntToStr(iSideDish) + 'g Of Food Can Make ' + IntToStr(iAdult) +
+    'Side Dishes With ' + IntToStr(iRest) + 'g As Leftovers');
+    end;
+
+  if rbDesert.Checked
+   then
+    begin
+    iDesert := StrToInt(ledWeight.Text);
+    iAdult := iDesert div Desert;
+    iRest := iDesert mod Desert;
+    redtOutput.Lines.Add(IntToStr(iDesert) + 'g Of Food Can Make ' + IntToStr(iAdult) +
+    ' Deserts With ' + IntToStr(iRest) + 'g As Leftovers');
+    end;
+
+
+end;
+
+end.

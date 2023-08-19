@@ -1,0 +1,43 @@
+unit For_Vb1_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  TForm29 = class(TForm)
+    btnVerwerk: TButton;
+    redAfvoer: TRichEdit;
+    procedure btnVerwerkClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form29: TForm29;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm29.btnVerwerkClick(Sender: TObject);
+var k : Integer;
+begin
+  {redAfvoer.Clear;
+  for k :=  1 to 5 do
+    redAfvoer.Lines.Add('Die waarde van k: ' + #9 + IntToStr(k));
+    redAfvoer.Lines.Add('Ons het die lus dus : ' + #9 + IntToStr(k-1) + ' uitgevoer.'); }
+
+    redAfvoer.Clear;
+  for k :=  1 to 5 do
+   begin
+    redAfvoer.Lines.Add('Die waarde van k: ' + #9 + IntToStr(k));
+    redAfvoer.Lines.Add('Ons het die lus dus : ' + #9 + IntToStr(k) + ' uitgevoer.');
+   end;
+end;
+
+end.

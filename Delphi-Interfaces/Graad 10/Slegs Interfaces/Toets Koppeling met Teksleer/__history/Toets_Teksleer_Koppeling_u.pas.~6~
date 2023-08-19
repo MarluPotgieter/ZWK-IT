@@ -1,0 +1,70 @@
+unit Toets_Teksleer_Koppeling_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Buttons, StdCtrls, ComCtrls;
+
+type
+  TfrmTeksleer = class(TForm)
+    btnLees: TButton;
+    redAfvoer: TRichEdit;
+    bmbReset: TBitBtn;
+    bmbClose: TBitBtn;
+    procedure btnLeesClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+  private
+
+
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTeksleer: TfrmTeksleer;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmTeksleer.btnLeesClick(Sender: TObject);
+var  Myleer : TextFile;
+     sEenreel, sNaam, sKlas : String;
+     iTel, iPos : Integer;
+     rGem : Real;
+begin
+   if FileExists('Punte.txt') <> true
+   then
+     begin
+       MessageDlg('Punte.txt bestaan nie',mtInformation,[mbOk],0);
+       Exit;
+     end  {Then}
+  else
+    begin
+      reset(Myleer);
+      Readln(Myleer,sEenreel);
+
+      iPos :=Pos(',',sEenreel);
+      sNaam := Copy(sEenreel,1,iPos-1);
+      Delete(sEenreel,1,iPos);
+
+      iPos :=Pos('#',sEenreel);
+      sKlas := Copy(sEenreel,1,iPos-1);
+      Delete(sEenreel,1,iPos);
+
+      rGem := StrToFloat(sEenreel);
+
+      redAfvoer.Lines.Add(sNaam + #9 + sKlas + #9 + FloatToStr(rGem));
+    end; {If}
+end;
+
+procedure TfrmTeksleer.FormActivate(Sender: TObject);
+begin
+  redAfvoer.Paragraph.TabCount := 3;
+  redAfvoer.Paragraph.Tab[0] := 0;
+  redAfvoer.Paragraph.Tab[1] := 50;
+  redAfvoer.Paragraph.Tab[2] := 100;
+end;
+
+end.

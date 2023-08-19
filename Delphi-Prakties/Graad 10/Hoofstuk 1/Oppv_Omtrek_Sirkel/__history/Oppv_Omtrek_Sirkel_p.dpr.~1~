@@ -1,0 +1,14 @@
+program Oppv_Omtrek_Sirkel_p;
+
+uses
+  Vcl.Forms,
+  Oppv_Omtrek_Sirkel_u in 'Oppv_Omtrek_Sirkel_u.pas' {frmSirkel};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmSirkel, frmSirkel);
+  Application.Run;
+end.

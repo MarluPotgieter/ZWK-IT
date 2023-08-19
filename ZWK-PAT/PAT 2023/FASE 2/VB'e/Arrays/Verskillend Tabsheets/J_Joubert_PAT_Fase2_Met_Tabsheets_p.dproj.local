@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/08/03 10:00:09.000.414,=J:\IT\IT GR11 - 2023\KW3\Hfst9 Aktw2 DBNavigator\Win32\Debug\Unit1.pas</Transaction>
+    <Transaction>2023/08/03 10:12:15.000.853,J:\IT\IT Gr10 - 2023\PAT 2023\Verskillend Tabsheets\J_Joubert_PAT_Fase2_Met_Tabsheets_u.pas=J:\IT\IT GR11 - 2023\KW3\Hfst9 Aktw2 DBNavigator\Win32\Debug\Unit1.pas</Transaction>
+    <Transaction>2023/08/03 10:12:15.000.853,J:\IT\IT Gr10 - 2023\PAT 2023\Verskillend Tabsheets\J_Joubert_PAT_Fase2_Met_Tabsheets_u.dfm=J:\IT\IT GR11 - 2023\KW3\Hfst9 Aktw2 DBNavigator\Win32\Debug\Unit1.dfm</Transaction>
+    <Transaction>2023/08/03 10:12:29.000.869,J:\IT\IT Gr10 - 2023\PAT 2023\Verskillend Tabsheets\J_Joubert_PAT_Fase2_Met_Tabsheets_p.dproj=J:\IT\IT GR11 - 2023\KW3\Hfst9 Aktw2 DBNavigator\Win32\Debug\Project1.dproj</Transaction>
+    <Transaction>2023/08/10 12:08:08.000.290,=J:\IT\IT Gr10 - 2023\PAT 2023\Verskillend Tabsheets\Unit1.pas</Transaction>
+    <Transaction>2023/08/10 12:09:01.000.951,J:\IT\IT Gr10 - 2023\PAT 2023\Verskillend Tabsheets\Unit1.dfm=J:\IT\IT Gr10 - 2023\PAT 2023\Verskillend Tabsheets\dmSnoepie_U.dfm</Transaction>
+    <Transaction>2023/08/10 12:09:01.000.951,J:\IT\IT Gr10 - 2023\PAT 2023\Verskillend Tabsheets\Unit1.pas=J:\IT\IT Gr10 - 2023\PAT 2023\Verskillend Tabsheets\dmSnoepie_U.pas</Transaction>
+  </Transactions>
+</BorlandProject>

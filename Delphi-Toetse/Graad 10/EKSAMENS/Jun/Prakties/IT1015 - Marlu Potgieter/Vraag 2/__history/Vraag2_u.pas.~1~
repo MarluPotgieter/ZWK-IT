@@ -1,0 +1,38 @@
+unit Vraag2_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ComCtrls;
+
+type
+  TForm1 = class(TForm)
+    Label1: TLabel;
+    edtAfstand: TEdit;
+    Label2: TLabel;
+    edtSpoed: TEdit;
+    redVertoon: TRichEdit;
+    btnBereken: TButton;
+    procedure btnBerekenClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.btnBerekenClick(Sender: TObject);
+
+begin
+ //voeg jou kode hieronder in
+
+end;
+
+end.

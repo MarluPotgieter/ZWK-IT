@@ -1,0 +1,30 @@
+object frmRegister: TfrmRegister
+  Left = 0
+  Top = 0
+  Caption = 'Register'
+  ClientHeight = 211
+  ClientWidth = 322
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object lblRegister: TLabel
+    Left = 96
+    Top = 48
+    Width = 42
+    Height = 15
+    Caption = 'Register'
+  end
+  object btnRegister: TButton
+    Left = 96
+    Top = 69
+    Width = 75
+    Height = 25
+    Caption = 'Register'
+    TabOrder = 0
+    OnClick = btnRegisterClick
+  end
+end

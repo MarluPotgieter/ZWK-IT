@@ -1,0 +1,34 @@
+object frmPicture: TfrmPicture
+  Left = 192
+  Top = 124
+  Width = 443
+  Height = 543
+  Caption = 'Display a picture'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -14
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 120
+  TextHeight = 17
+  object btnShow: TButton
+    Left = 21
+    Top = 21
+    Width = 156
+    Height = 60
+    Caption = 'Show the picture'
+    TabOrder = 0
+    OnClick = btnShowClick
+  end
+  object btnDestroy: TButton
+    Left = 197
+    Top = 21
+    Width = 148
+    Height = 60
+    Caption = 'Destroy picture'
+    TabOrder = 1
+    OnClick = btnDestroyClick
+  end
+end

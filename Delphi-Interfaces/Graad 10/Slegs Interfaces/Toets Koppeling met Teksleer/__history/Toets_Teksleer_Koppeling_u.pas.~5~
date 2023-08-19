@@ -1,0 +1,29 @@
+unit Toets_Teksleer_Koppeling_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, Buttons, StdCtrls, ComCtrls;
+
+type
+  TfrmTeksleer = class(TForm)
+    btnLees: TButton;
+    redAfvoer: TRichEdit;
+    bmbReset: TBitBtn;
+    bmbClose: TBitBtn;
+  private
+
+
+  public
+    { Public declarations }
+  end;
+
+var
+  frmTeksleer: TfrmTeksleer;
+
+implementation
+
+{$R *.dfm}
+
+end.

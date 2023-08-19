@@ -1,0 +1,47 @@
+unit WelkomSkerm_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Mask, VerkoopSkerm_u;
+
+type
+  TfrmWelkom = class(TForm)
+    ledUserName: TLabeledEdit;
+    ledPassWord: TLabeledEdit;
+    btnSignIn: TButton;
+    imgLogo: TImage;
+    procedure btnSignInClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    var arrUser : array;
+
+
+  end;
+
+var
+  frmWelkom: TfrmWelkom;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmWelkom.btnSignInClick(Sender: TObject);
+begin
+
+  frmWelkom.Visible := False;
+  frmVerkope.Visible := True;
+
+end;
+
+procedure TfrmWelkom.FormActivate(Sender: TObject);
+begin
+
+  arrUser := file
+
+end;
+
+end.

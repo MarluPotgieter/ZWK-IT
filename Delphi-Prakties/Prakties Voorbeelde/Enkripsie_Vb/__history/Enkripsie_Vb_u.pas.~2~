@@ -1,0 +1,40 @@
+unit Enkripsie_Vb_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, ExtCtrls;
+
+type
+  TfrmEnkripsie = class(TForm)
+    ledSin: TLabeledEdit;
+    ledNuweSin: TLabeledEdit;
+    btnEnkripsie: TButton;
+    procedure btnEnkripsieClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmEnkripsie: TfrmEnkripsie;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmEnkripsie.btnEnkripsieClick(Sender: TObject);
+var sSin, sNuweSin : string;
+    iLengte, k : Integer;
+begin
+  sSin := 'Hallo, hoe gaan dit?';
+  iLengte := Length(sSin);
+  for k := 1 to iLengte do
+    begin
+     sNuweSin:= sNuweSin + chr(ord(sSin[k]) +5);
+    end;
+  ledNuweSin.Text := sNuweSin;
+
+end.

@@ -1,0 +1,48 @@
+unit Oefen2_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons;
+
+type
+  TForm40 = class(TForm)
+    gbxGeslag: TGroupBox;
+    rbnManlik: TRadioButton;
+    rbnVroulik: TRadioButton;
+    btnBereken: TButton;
+    lblBoodskap: TLabel;
+    bmbReset: TBitBtn;
+    procedure btnBerekenClick(Sender: TObject);
+    procedure bmbResetClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form40: TForm40;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm40.bmbResetClick(Sender: TObject);
+begin
+  rbnManlik.Checked := False;
+  rbnVroulik.Checked := False;
+  lblBoodskap.Caption := '';
+end;
+
+procedure TForm40.btnBerekenClick(Sender: TObject);
+begin
+  if rbnManlik.Checked
+  then lblBoodskap.Caption := 'Koste is R1000'
+  else
+    if rbnVroulik.Checked
+    then lblBoodskap.Caption := 'Koste is R500';
+end;
+
+end.

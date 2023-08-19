@@ -1,0 +1,87 @@
+unit frmInternetCafe_u;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  StdCtrls, ExtCtrls, Math, Buttons;
+
+ const
+  Cost = 25;
+
+type
+  TfrmInternetCafe = class(TForm)
+    lblHeading: TLabel;
+    pnlOn: TPanel;
+    pnlOff: TPanel;
+    lblOnHour: TLabel;
+    lblOnMin: TLabel;
+    lblOffHour: TLabel;
+    lblOffMin: TLabel;
+    lblClients: TLabel;
+    lblInDay: TLabel;
+    lblAvgSession: TLabel;
+    lblBusyFor: TLabel;
+    lblCostSes: TLabel;
+    edtOnHour: TEdit;
+    edtOnMin: TEdit;
+    edtOffHour: TEdit;
+    edtOffMin: TEdit;
+    btnCalculate: TButton;
+    btnReset: TButton;
+    lblNumClients: TLabel;
+    lblDayTakings: TLabel;
+    lblAveTakings: TLabel;
+    lblTime: TLabel;
+    lblCost: TLabel;
+    bmbClose: TBitBtn;
+    Label6: TLabel;
+    Label7: TLabel;
+    procedure btnCalculateClick(Sender: TObject);
+  private
+
+    var
+      rClients,rAvgEarnings, rEarningsTot, rBusy, rSessionTot, rHourB, rMinB, rHourE, rMinE, rMinBTot, rMinETot,
+      rTimeTot, rTotCost, rDes, rInt : Real;
+
+
+  public
+    { Public declarations }
+  end;
+
+var
+  frmInternetCafe: TfrmInternetCafe;
+
+implementation
+
+{$R *.DFM}
+
+
+procedure TfrmInternetCafe.btnCalculateClick(Sender: TObject);
+begin
+
+  rHourB := StrToFloat(edtOnHour.Text);
+  rMinB := StrToFloat(edtOnMin.Text);
+
+  rHourE := StrToFloat(edtOffHour.Text);
+  rMinE := StrToFloat(edtOffMin.Text);
+
+  rMinBTot := (rHourB * 60) + rMinB;
+  rMinETot := ( rHourE * 60) + rMinE;
+
+  rTimeTot := rMinETot + rMinBTot;
+
+  rDes := rTimeTot mod 60;
+
+
+  rInt := rTimeTot div 60;
+
+
+
+
+
+
+end;
+
+end.
+
