@@ -1,0 +1,67 @@
+unit WhileLoop_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons;
+
+type
+  TfrmWhile = class(TForm)
+    btnInlees: TButton;
+    memAfvoer: TMemo;
+    edtNaam: TEdit;
+    bmbClose: TBitBtn;
+    bmbReset: TBitBtn;
+    procedure btnInleesClick(Sender: TObject);
+    procedure bmbResetClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmWhile: TfrmWhile;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmWhile.bmbResetClick(Sender: TObject);
+begin
+
+  memAfvoer.Lines.Clear;
+  edtNaam.Clear;
+  edtNaam.SetFocus;
+
+end;
+
+procedure TfrmWhile.btnInleesClick(Sender: TObject);
+
+var
+  sNaam : string;
+  iTel : Integer;
+  bKlaar : Boolean;
+
+begin
+
+  bKlaar := StrToBool(InputBox('Naam','Tik In','False'));
+
+  while bKlaar = False do
+    begin
+
+      iTel := 1;
+      sNaam := edtNaam.Text;
+      memAfvoer.Lines.Add('(' + IntToStr(iTel) + ')' + #9 + sNaam);
+
+      bKlaar := StrToBool(InputBox('Naam','Is jy klaar? (True/Flase)','False'));
+      edtNaam.Clear;
+
+    end;
+
+    Inc(iTel);
+
+end;
+
+end.

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/02/03 13:50:49.000.163,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/02/06 09:53:59.000.589,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/07 13:04:44.000.565,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/07 13:29:26.000.030,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/03/16 08:24:54.000.824,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/04/13 13:19:28.000.303,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/04/18 11:55:24.000.413,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/07/31 12:58:29.000.050,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/08/22 10:20:13.000.526,=C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/08/22 10:20:59.000.704,C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.dfm=F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\While Loop\WhileLoop_u.dfm</Transaction>
+    <Transaction>2023/08/22 10:20:59.000.704,C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Unit1.pas=F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\While Loop\WhileLoop_u.pas</Transaction>
+    <Transaction>2023/08/22 10:21:06.000.749,C:\Users\IT1015\Documents\Embarcadero\Studio\Projects\Project1.dproj=F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\While Loop\WhileLoop_p.dproj</Transaction>
+    <Transaction>2023/08/22 10:44:25.000.232,F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\Repeat Loop\Repeatloop_p.dproj=F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\While Loop\WhileLoop_p.dproj</Transaction>
+    <Transaction>2023/08/22 10:44:44.000.712,F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\Repeat Loop\Repeatloop_u.dfm=F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\While Loop\WhileLoop_u.dfm</Transaction>
+    <Transaction>2023/08/22 10:44:44.000.712,F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\Repeat Loop\Repeatloop_u.pas=F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\While Loop\WhileLoop_u.pas</Transaction>
+    <Transaction>2023/08/25 12:50:09.000.428,=F:\ZWK-IT\Delphi-Prakties\Graad 10\Hersiening\Repeat Loop\PassWord.pas</Transaction>
+  </Transactions>
+</BorlandProject>
