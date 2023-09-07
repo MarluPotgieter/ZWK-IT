@@ -1,0 +1,44 @@
+unit VerkoopSkerm_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TfrmVerkope = class(TForm)
+    rgChips: TRadioGroup;
+    rgKoeldrank: TRadioGroup;
+    rgYsies: TRadioGroup;
+    rgGebak: TRadioGroup;
+    rbLays: TRadioButton;
+    rbDoritos: TRadioButton;
+    rbBigCornBites: TRadioButton;
+    rbFritos: TRadioButton;
+    rbCoke: TRadioButton;
+    rbSprite: TRadioButton;
+    rbFanta: TRadioButton;
+    rbCreamSoda: TRadioButton;
+    rbMVanilla: TRadioButton;
+    rbMStrawberry: TRadioButton;
+    rbWNaartjie: TRadioButton;
+    rbNMango: TRadioButton;
+    rbMuffin: TRadioButton;
+    rbToastie: TRadioButton;
+    rbCookie: TRadioButton;
+    rbQuiche: TRadioButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmVerkope: TfrmVerkope;
+
+implementation
+
+{$R *.dfm}
+
+end.

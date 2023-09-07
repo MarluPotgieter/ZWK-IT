@@ -1,43 +1,43 @@
 ﻿[Closed Files]
-File_0=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\WelkomSkerm_u.pas',0,1,67,13,11,0,0,,
-File_1=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\8 Aug\Skenmontwerp\Skerm2_u.pas',0,1,1,1,1,0,0,,
-File_2=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\8 Aug\Skenmontwerp\Skerm3_u.pas',0,1,1,1,1,0,0,,
-File_3=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\8 Aug\Skenmontwerp\SkermOntwerp_u.pas',0,1,1,1,1,0,0,,
-File_4=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB''e\VB Tabsheets\VBTabsheets_u.pas',0,1,33,3,34,0,0,,
-File_5=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\3 Aug VB Meer as een unit\frmVerwerk_u.pas',0,1,29,40,38,0,0,,
-File_6=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\3 Aug VB Meer as een unit\frmMainForm_u.pas',0,1,26,31,35,0,0,,
-File_7=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\27 Jul\Voorlopige_u.pas',0,1,1,1,1,0,0,,
-File_8=TSourceModule,'F:\DELPHI\Delphi-Prakties\Prakties Voorbeelde\Arrays\Aktw6 Nr1 Bl166 _ Computers\Aktw6_Nr1_Bl166_Computers_u.pas',0,1,10,1,1,0,0,,
-File_9=TSourceModule,'J:\IT\IT GR11 - 2023\KW2\Hfst 7 - Skikkings\Aktw5 Nr2 Bl164 Standard deviation\frmStandDev_u.pas',0,1,55,44,58,0,0,,
-File_10=TSourceModule,'J:\IT\IT GR11 - 2023\KW2\Hfst 7 - Skikkings\Aktw5 Nr1  Bl164 Portfolios\frmPortfolios_u.pas',0,1,64,39,79,0,0,,
-File_11=TSourceModule,'X:\Graad 11\DATA VIR GR11 IT LEERDERS 2023\Gr11 IT CAPS - PRAKTIES  DATA\Chapter 7 Arrays\Activity 4\frmClassMarks_u.pas',0,1,19,1,30,0,0,,
-File_12=TSourceModule,'X:\Graad 11\A -Mnr Joubert 2023\KW2\Hfst 7 - Skikkings\Aktw3 Nr4 Rainfall\frmRainfall_u.pas',0,1,39,50,58,0,0,,
-File_13=TSourceModule,'X:\Graad 11\A -Mnr Joubert 2023\KW2\Hfst 7 - Skikkings\Aktw3 Nr3 Bl161 Gymnastics\frmGymnastics_u.pas',0,1,29,60,37,0,0,,
-File_14=TSourceModule,'X:\Graad 11\A -Mnr Joubert 2023\KW2\Hfst 7 - Skikkings\Aktw3 Nr1 Gym calculations\frmGymCalc_u.pas',0,1,1,1,1,0,0,,
+File_0=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\StatsSkerm_u.pas',0,1,1,1,1,0,0,,
+File_1=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\WelkomSkerm_u.pas',0,1,67,13,11,0,0,,
+File_2=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\8 Aug\Skenmontwerp\Skerm2_u.pas',0,1,1,1,1,0,0,,
+File_3=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\8 Aug\Skenmontwerp\Skerm3_u.pas',0,1,1,1,1,0,0,,
+File_4=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\8 Aug\Skenmontwerp\SkermOntwerp_u.pas',0,1,1,1,1,0,0,,
+File_5=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB''e\VB Tabsheets\VBTabsheets_u.pas',0,1,33,3,34,0,0,,
+File_6=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\3 Aug VB Meer as een unit\frmVerwerk_u.pas',0,1,29,40,38,0,0,,
+File_7=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\3 Aug VB Meer as een unit\frmMainForm_u.pas',0,1,26,31,35,0,0,,
+File_8=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\27 Jul\Voorlopige_u.pas',0,1,1,1,1,0,0,,
+File_9=TSourceModule,'F:\DELPHI\Delphi-Prakties\Prakties Voorbeelde\Arrays\Aktw6 Nr1 Bl166 _ Computers\Aktw6_Nr1_Bl166_Computers_u.pas',0,1,10,1,1,0,0,,
+File_10=TSourceModule,'J:\IT\IT GR11 - 2023\KW2\Hfst 7 - Skikkings\Aktw5 Nr2 Bl164 Standard deviation\frmStandDev_u.pas',0,1,55,44,58,0,0,,
+File_11=TSourceModule,'J:\IT\IT GR11 - 2023\KW2\Hfst 7 - Skikkings\Aktw5 Nr1  Bl164 Portfolios\frmPortfolios_u.pas',0,1,64,39,79,0,0,,
+File_12=TSourceModule,'X:\Graad 11\DATA VIR GR11 IT LEERDERS 2023\Gr11 IT CAPS - PRAKTIES  DATA\Chapter 7 Arrays\Activity 4\frmClassMarks_u.pas',0,1,19,1,30,0,0,,
+File_13=TSourceModule,'X:\Graad 11\A -Mnr Joubert 2023\KW2\Hfst 7 - Skikkings\Aktw3 Nr4 Rainfall\frmRainfall_u.pas',0,1,39,50,58,0,0,,
+File_14=TSourceModule,'X:\Graad 11\A -Mnr Joubert 2023\KW2\Hfst 7 - Skikkings\Aktw3 Nr3 Bl161 Gymnastics\frmGymnastics_u.pas',0,1,29,60,37,0,0,,
 
 [Modules]
-Module0=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\StatsSkerm_u.pas
-Module1=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\BetaalSkerm_u.pas
-Module2=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\VerkoopSkerm_u.pas
-Module3=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\15 Aug\SkermOntwerp\WelkomSkerm_u.pas
+Module0=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\BetaalSkerm_u.pas
+Module1=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\StatsSkerm_u.pas
+Module2=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\VerkoopSkerm_u.pas
+Module3=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\WelkomSkerm_u.pas
 Count=4
 EditWindowCount=1
 
-[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\StatsSkerm_u.pas]
+[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\BetaalSkerm_u.pas]
 ModuleType=TSourceModule
 
-[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\BetaalSkerm_u.pas]
+[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\StatsSkerm_u.pas]
 ModuleType=TSourceModule
 
-[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\VerkoopSkerm_u.pas]
+[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\VerkoopSkerm_u.pas]
 ModuleType=TSourceModule
 
-[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\15 Aug\SkermOntwerp\WelkomSkerm_u.pas]
+[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\WelkomSkerm_u.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
 ViewCount=4
-CurrentEditView=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\StatsSkerm_u.pas
+CurrentEditView=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\BetaalSkerm_u.pas
 View0=0
 View1=1
 View2=2
@@ -73,47 +73,47 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 
 [View0]
 CustomEditViewType=TEditView
-Module=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\15 Aug\SkermOntwerp\WelkomSkerm_u.pas
+Module=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\WelkomSkerm_u.pas
 CursorX=122
 CursorY=7
-TopLine=10
+TopLine=1
 LeftCol=2
 Elisions=
 Bookmarks=
-EditViewName=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\15 Aug\SkermOntwerp\WelkomSkerm_u.pas
+EditViewName=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\WelkomSkerm_u.pas
 
 [View1]
 CustomEditViewType=TEditView
-Module=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\VerkoopSkerm_u.pas
-CursorX=1
-CursorY=60
-TopLine=46
+Module=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\StatsSkerm_u.pas
+CursorX=31
+CursorY=78
+TopLine=54
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\VerkoopSkerm_u.pas
+EditViewName=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\StatsSkerm_u.pas
 
 [View2]
 CustomEditViewType=TEditView
-Module=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\BetaalSkerm_u.pas
-CursorX=47
-CursorY=35
-TopLine=1
+Module=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\VerkoopSkerm_u.pas
+CursorX=46
+CursorY=63
+TopLine=41
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\BetaalSkerm_u.pas
+EditViewName=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\VerkoopSkerm_u.pas
 
 [View3]
 CustomEditViewType=TEditView
-Module=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\14 Aug\SkermOntwerp\StatsSkerm_u.pas
-CursorX=1
-CursorY=1
-TopLine=1
+Module=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\BetaalSkerm_u.pas
+CursorX=17
+CursorY=44
+TopLine=13
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 1\VOOLOPIGE FASE1\16 AUg\SkermOntwerp\BetaalSkerm_u.pas
 
 [Watches]
 Count=0
@@ -242,16 +242,16 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1894
 ClientHeight=4628
-TBDockHeight=5198
+TBDockHeight=8465
 LRDockWidth=1894
 Dockable=1
 StayOnTop=0
-SplitPos=120
+SplitPos=117
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
 SelectedItem=Align,
-ExpandedItems=Anchors=0,Constraints=0,EditLabel=0,EditLabel.Font=0,EditLabel.LiveBindings=0,"EditLabel.LiveBindings Designer=0",EditLabel.Margins=0,EditLabel.Touch=0,EditLabel.Touch.InteractiveGestureOptions=0,EditLabel.Touch.InteractiveGestures=0,EditLabel.Touch.TabletOptions=0,Font=0,BevelEdges=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,StyleElements=0,BorderIcons=0,CustomTitleBar=0,GlassFrame=0,HorzScrollBar=0,Padding=0
+ExpandedItems=Anchors=0,Constraints=0,EditLabel=1,EditLabel.Font=0,EditLabel.LiveBindings=0,"EditLabel.LiveBindings Designer=0",EditLabel.Margins=0,EditLabel.Touch=0,EditLabel.Touch.InteractiveGestureOptions=0,EditLabel.Touch.InteractiveGestures=0,EditLabel.Touch.TabletOptions=0,Font=0,BevelEdges=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0,StyleElements=0,BorderIcons=0,CustomTitleBar=0,GlassFrame=0,HorzScrollBar=0,Padding=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -684,7 +684,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=4477
-TBDockHeight=4605
+TBDockHeight=8465
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
@@ -708,7 +708,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1894
 ClientHeight=3419
-TBDockHeight=3547
+TBDockHeight=8465
 LRDockWidth=1894
 Dockable=1
 StayOnTop=0
@@ -732,7 +732,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=3570
-TBDockHeight=4151
+TBDockHeight=8465
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0

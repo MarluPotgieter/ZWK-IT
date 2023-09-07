@@ -1,0 +1,20 @@
+program SkermOntwerp_p;
+
+uses
+  Vcl.Forms,
+  WelkomSkerm_u in '..\..\..\FASE 1\FINALE FASE1\SkermOntwerp\WelkomSkerm_u.pas' {frmWelkom},
+  VerkoopSkerm_u in '..\..\..\FASE 1\FINALE FASE1\SkermOntwerp\VerkoopSkerm_u.pas' {frmVerkope},
+  BetaalSkerm_u in '..\..\..\FASE 1\FINALE FASE1\SkermOntwerp\BetaalSkerm_u.pas' {frmBetaal},
+  StatsSkerm_u in '..\..\..\FASE 1\FINALE FASE1\SkermOntwerp\StatsSkerm_u.pas' {frmStats};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmWelkom, frmWelkom);
+  Application.CreateForm(TfrmVerkope, frmVerkope);
+  Application.CreateForm(TfrmBetaal, frmBetaal);
+  Application.CreateForm(TfrmStats, frmStats);
+  Application.Run;
+end.

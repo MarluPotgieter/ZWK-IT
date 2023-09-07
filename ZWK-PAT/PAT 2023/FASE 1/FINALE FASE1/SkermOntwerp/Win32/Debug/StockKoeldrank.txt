@@ -1,0 +1,4 @@
+Coke#7.99*15
+Sprite#7.99*15
+Fanta#7.99*15
+Cream Soda#7.99*15
