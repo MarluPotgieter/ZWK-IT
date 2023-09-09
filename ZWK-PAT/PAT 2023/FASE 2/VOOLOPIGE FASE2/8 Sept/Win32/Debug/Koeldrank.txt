@@ -1,0 +1,5 @@
+naam*VP#KP$Aantal oor
+coke*11.99#7.99$20
+fanta*11.99#7.99$20	
+sprite*11.99#7.99$20 
+creamsoda*11.99#7.99$20
