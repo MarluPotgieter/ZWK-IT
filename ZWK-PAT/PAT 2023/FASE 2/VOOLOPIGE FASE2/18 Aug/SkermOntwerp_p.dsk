@@ -242,16 +242,11 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1894
 ClientHeight=4628
-TBDockHeight=8465
+TBDockHeight=5198
 LRDockWidth=1894
 Dockable=1
 StayOnTop=0
 SplitPos=111
-
-[PropInspDesignerSelection]
-ArrangeBy=Name
-SelectedItem=Caption,OnActivate
-ExpandedItems=Anchors=0,BorderIcons=0,LiveBindings=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -684,7 +679,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=4477
-TBDockHeight=8465
+TBDockHeight=4605
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
@@ -708,7 +703,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1894
 ClientHeight=3419
-TBDockHeight=8465
+TBDockHeight=3547
 LRDockWidth=1894
 Dockable=1
 StayOnTop=0
@@ -732,7 +727,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=3570
-TBDockHeight=8465
+TBDockHeight=4151
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
