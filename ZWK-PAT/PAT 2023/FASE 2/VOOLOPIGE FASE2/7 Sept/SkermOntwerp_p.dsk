@@ -16,14 +16,14 @@ File_13=TSourceModule,'X:\Graad 11\A -Mnr Joubert 2023\KW2\Hfst 7 - Skikkings\Ak
 File_14=TSourceModule,'X:\Graad 11\A -Mnr Joubert 2023\KW2\Hfst 7 - Skikkings\Aktw3 Nr3 Bl161 Gymnastics\frmGymnastics_u.pas',0,1,29,60,37,0,0,,
 
 [Modules]
-Module0=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas
+Module0=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
 Module1=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\VerkoopSkerm_u.pas
 Module2=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\BetaalSkerm_u.pas
-Module3=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
+Module3=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas
 Count=4
 EditWindowCount=1
 
-[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas]
+[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas]
 ModuleType=TSourceModule
 
 [F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\VerkoopSkerm_u.pas]
@@ -32,12 +32,12 @@ ModuleType=TSourceModule
 [F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\BetaalSkerm_u.pas]
 ModuleType=TSourceModule
 
-[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas]
+[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
 ViewCount=4
-CurrentEditView=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas
+CurrentEditView=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
 View0=0
 View1=1
 View2=2
@@ -76,11 +76,11 @@ CustomEditViewType=TEditView
 Module=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
 CursorX=3
 CursorY=30
-TopLine=22
+TopLine=1
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
 
 [View1]
 CustomEditViewType=TEditView
@@ -197,7 +197,7 @@ Visible=0
 Docked=1
 State=0
 Left=0
-Top=0
+Top=28
 Width=2769
 Height=1419
 MaxLeft=-1
@@ -242,7 +242,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1894
 ClientHeight=4628
-TBDockHeight=5198
+TBDockHeight=8465
 LRDockWidth=1894
 Dockable=1
 StayOnTop=0
@@ -250,8 +250,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=ReadOnly,Action
-ExpandedItems=Anchors=0,BorderIcons=0,LiveBindings=0,BevelEdges=0,"LiveBindings Designer=0",Margins=0
+SelectedItem=Caption,
+ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,CustomTitleBar=0,Font=0,GlassFrame=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -262,11 +262,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=6035
+Height=8140
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=6035
+ClientHeight=8140
 TBDockHeight=5953
 LRDockWidth=2512
 Dockable=1
@@ -278,8 +278,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1272
-Top=181
+Left=-1600
+Top=201
 Width=275
 Height=360
 MaxLeft=-1
@@ -383,11 +383,11 @@ State=0
 Left=0
 Top=0
 Width=2338
-Height=919
+Height=1151
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2338
-ClientHeight=919
+ClientHeight=1151
 TBDockHeight=2314
 LRDockWidth=2825
 Dockable=1
@@ -421,11 +421,11 @@ State=0
 Left=0
 Top=0
 Width=2338
-Height=1151
+Height=1140
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2338
-ClientHeight=1151
+ClientHeight=1140
 TBDockHeight=1151
 LRDockWidth=3675
 Dockable=1
@@ -448,11 +448,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=6035
+Height=8140
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=6035
+ClientHeight=8140
 TBDockHeight=4884
 LRDockWidth=7150
 Dockable=1
@@ -483,8 +483,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-8
-Top=-124
+Left=-16
+Top=-104
 Width=1850
 Height=3140
 MaxLeft=-1
@@ -588,11 +588,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=6035
+Height=8140
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=6035
+ClientHeight=8140
 TBDockHeight=4884
 LRDockWidth=5306
 Dockable=1
@@ -684,7 +684,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=4477
-TBDockHeight=4605
+TBDockHeight=8465
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0
@@ -708,7 +708,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=1894
 ClientHeight=3419
-TBDockHeight=3547
+TBDockHeight=8465
 LRDockWidth=1894
 Dockable=1
 StayOnTop=0
@@ -732,7 +732,7 @@ MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
 ClientHeight=3570
-TBDockHeight=4151
+TBDockHeight=8465
 LRDockWidth=2000
 Dockable=1
 StayOnTop=0

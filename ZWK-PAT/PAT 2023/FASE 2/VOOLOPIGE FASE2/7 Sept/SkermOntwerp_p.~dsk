@@ -16,15 +16,12 @@ File_13=TSourceModule,'X:\Graad 11\A -Mnr Joubert 2023\KW2\Hfst 7 - Skikkings\Ak
 File_14=TSourceModule,'X:\Graad 11\A -Mnr Joubert 2023\KW2\Hfst 7 - Skikkings\Aktw3 Nr3 Bl161 Gymnastics\frmGymnastics_u.pas',0,1,29,60,37,0,0,,
 
 [Modules]
-Module0=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
-Module1=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas
-Module2=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\VerkoopSkerm_u.pas
-Module3=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\BetaalSkerm_u.pas
+Module0=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas
+Module1=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\VerkoopSkerm_u.pas
+Module2=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\BetaalSkerm_u.pas
+Module3=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
 Count=4
 EditWindowCount=1
-
-[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas]
-ModuleType=TSourceModule
 
 [F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas]
 ModuleType=TSourceModule
@@ -35,9 +32,12 @@ ModuleType=TSourceModule
 [F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\BetaalSkerm_u.pas]
 ModuleType=TSourceModule
 
+[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas]
+ModuleType=TSourceModule
+
 [EditWindow0]
 ViewCount=4
-CurrentEditView=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
+CurrentEditView=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas
 View0=0
 View1=1
 View2=2
@@ -74,31 +74,31 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
-CursorX=1
-CursorY=1
-TopLine=1
+CursorX=3
+CursorY=30
+TopLine=22
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\WelkomSkerm_u.pas
+EditViewName=Borland.FormDesignerView
 
 [View1]
 CustomEditViewType=TEditView
 Module=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas
-CursorX=11
-CursorY=63
-TopLine=46
+CursorX=3
+CursorY=89
+TopLine=75
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\StatsSkerm_u.pas
+EditViewName=Borland.FormDesignerView
 
 [View2]
 CustomEditViewType=TEditView
 Module=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\7 Sept\VerkoopSkerm_u.pas
-CursorX=46
-CursorY=64
-TopLine=41
+CursorX=1
+CursorY=107
+TopLine=107
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -250,8 +250,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Caption,OnActivate
-ExpandedItems=Anchors=0,BorderIcons=0,LiveBindings=0
+SelectedItem=ReadOnly,Action
+ExpandedItems=Anchors=0,BorderIcons=0,LiveBindings=0,BevelEdges=0,"LiveBindings Designer=0",Margins=0
 
 [frmDesignPreview]
 PercentageSizes=1
@@ -262,11 +262,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8140
+Height=6035
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8140
+ClientHeight=6035
 TBDockHeight=5953
 LRDockWidth=2512
 Dockable=1
@@ -448,11 +448,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8140
+Height=6035
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8140
+ClientHeight=6035
 TBDockHeight=4884
 LRDockWidth=7150
 Dockable=1
@@ -588,11 +588,11 @@ State=0
 Left=0
 Top=0
 Width=2000
-Height=8140
+Height=6035
 MaxLeft=-1
 MaxTop=-1
 ClientWidth=2000
-ClientHeight=8140
+ClientHeight=6035
 TBDockHeight=4884
 LRDockWidth=5306
 Dockable=1

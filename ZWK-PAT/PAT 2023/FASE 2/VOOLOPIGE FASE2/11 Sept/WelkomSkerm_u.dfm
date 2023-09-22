@@ -302,4 +302,19 @@ object frmWelkom: TfrmWelkom
     NumGlyphs = 2
     TabOrder = 4
   end
+  object redGr11: TRichEdit
+    Left = 304
+    Top = 128
+    Width = 185
+    Height = 89
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    Lines.Strings = (
+      'redGr11')
+    ParentFont = False
+    TabOrder = 5
+  end
 end

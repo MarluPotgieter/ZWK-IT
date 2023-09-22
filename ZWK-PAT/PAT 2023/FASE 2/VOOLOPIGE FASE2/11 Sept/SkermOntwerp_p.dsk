@@ -17,22 +17,22 @@ File_14=TSourceModule,'F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\27 Jul\
 
 [Modules]
 Module0=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\WelkomSkerm_u.pas
-Module1=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\StatsSkerm_u.pas
-Module2=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\BetaalSkerm_u.pas
-Module3=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\VerkoopSkerm_u.pas
+Module1=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\VerkoopSkerm_u.pas
+Module2=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\StatsSkerm_u.pas
+Module3=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\BetaalSkerm_u.pas
 Count=4
 EditWindowCount=1
 
 [F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\WelkomSkerm_u.pas]
 ModuleType=TSourceModule
 
+[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\VerkoopSkerm_u.pas]
+ModuleType=TSourceModule
+
 [F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\StatsSkerm_u.pas]
 ModuleType=TSourceModule
 
 [F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\BetaalSkerm_u.pas]
-ModuleType=TSourceModule
-
-[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\VerkoopSkerm_u.pas]
 ModuleType=TSourceModule
 
 [EditWindow0]
@@ -74,13 +74,13 @@ BottomMiddelPanelData=0000080001020200000009000000446F636B5369746530100000004772
 [View0]
 CustomEditViewType=TEditView
 Module=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\WelkomSkerm_u.pas
-CursorX=1
-CursorY=228
-TopLine=117
+CursorX=7
+CursorY=187
+TopLine=160
 LeftCol=1
 Elisions=
 Bookmarks=
-EditViewName=Borland.FormDesignerView
+EditViewName=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VOOLOPIGE FASE2\11 Sept\WelkomSkerm_u.pas
 
 [View1]
 CustomEditViewType=TEditView
@@ -250,8 +250,8 @@ SplitPos=111
 
 [PropInspDesignerSelection]
 ArrangeBy=Name
-SelectedItem=Name,CustomHint
-ExpandedItems=Anchors=0,BorderIcons=0,LiveBindings=0,"LiveBindings Designer=0",BevelEdges=0,Constraints=0,HorzScrollBar=0,Margins=0
+SelectedItem=Name,
+ExpandedItems=Anchors=0,BorderIcons=0,Constraints=0,CustomTitleBar=0,Font=0,GlassFrame=0,LiveBindings=0,"LiveBindings Designer=0",Margins=0
 
 [frmDesignPreview]
 PercentageSizes=1

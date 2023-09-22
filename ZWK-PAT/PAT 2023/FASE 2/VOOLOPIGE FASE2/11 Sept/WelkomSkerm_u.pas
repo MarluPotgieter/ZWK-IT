@@ -19,6 +19,7 @@ type
     imgLogo: TImage;
     btnHelp: TButton;
     bmbClose: TBitBtn;
+    redGr11: TRichEdit;
     procedure btnSignInClick(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
@@ -183,7 +184,7 @@ begin
     begin
       Inc(iCount1);
       Readln(txUser,arrUser[iCount1]);
-      //redGr11.Lines.Add(arrUser[iCount1]);
+      redGr11.Lines.Add(arrUser[iCount1]);
     end;
 
   iCount2 := 0;

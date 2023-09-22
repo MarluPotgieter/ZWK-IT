@@ -16,16 +16,16 @@ File_13=TSourceModule,'J:\IT\Vraestelle\Distrik\2023\Ge-Download vanaf Eksamen G
 File_14=TSourceModule,'J:\IT\Vraestelle\Gr12\TOETSE\GR12 IT Prakties Mei - OOP KW2 2023\Memo\Vraag 1\clsRekords_U.pas',0,1,21,81,102,0,0,,
 
 [Modules]
-Module0=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas
-Module1=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas
+Module0=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas
+Module1=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas
 Module2=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\dmSnoepie_NEW_u.pas
 Count=3
 EditWindowCount=1
 
-[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas]
+[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas]
 ModuleType=TSourceModule
 
-[F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas]
+[F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas]
 ModuleType=TSourceModule
 
 [F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\dmSnoepie_NEW_u.pas]
@@ -33,7 +33,7 @@ ModuleType=TSourceModule
 
 [EditWindow0]
 ViewCount=3
-CurrentEditView=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas
+CurrentEditView=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas
 View0=0
 View1=1
 View2=2
@@ -82,7 +82,7 @@ CustomEditViewType=TEditView
 Module=F:\DELPHI\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas
 CursorX=34
 CursorY=75
-TopLine=70
+TopLine=73
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -93,7 +93,7 @@ CustomEditViewType=TEditView
 Module=F:\ZWK-IT\ZWK-PAT\PAT 2023\FASE 2\VB'e\Arrays\VB_Arrays_u.pas
 CursorX=34
 CursorY=8
-TopLine=34
+TopLine=64
 LeftCol=1
 Elisions=
 Bookmarks=
@@ -257,8 +257,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-1272
-Top=181
+Left=-1600
+Top=201
 Width=275
 Height=360
 MaxLeft=-1
@@ -462,8 +462,8 @@ Create=1
 Visible=0
 Docked=1
 State=0
-Left=-8
-Top=-124
+Left=-16
+Top=-104
 Width=1850
 Height=3140
 MaxLeft=-1
