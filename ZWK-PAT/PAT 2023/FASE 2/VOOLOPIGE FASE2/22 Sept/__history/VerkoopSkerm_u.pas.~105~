@@ -151,7 +151,7 @@ begin
 
 
 
- //##############################################################################
+//##############################################################################
 
   AssignFile(txChipsName,'ChipsName.txt');
 
@@ -195,7 +195,7 @@ begin
      Exit;
   end;
 
-//#############################################################################
+//##############################################################################
 
   AssignFile(txKoeldrankName,'KoeldrankName.txt');
 
@@ -239,7 +239,7 @@ begin
     Exit;
   end;
 
-//############################################################################
+//##############################################################################
 
   AssignFile(txYsiesName,'YsiesName.txt');
 
@@ -283,7 +283,7 @@ begin
     Exit;
   end;
 
-//###############################################################################
+//##############################################################################
 
   AssignFile(txGebakName,'GebakName.txt');
 
@@ -327,22 +327,7 @@ begin
     Exit;
   end;
 
-//#############################################################################
-
-  {AssignFile(txStrokie,'Strokie.txt');
-
-  try
-
-   Reset(txStrokie);
-
-  except
-
-    ShowMessage('Strokie.txt does not exist');
-    Exit;
-
-  end;     }
-
-//##################################################################################
+//##############################################################################
 
   AssignFile(txUser,'Usernames.txt');
 
@@ -370,29 +355,196 @@ begin
   
 
   iCount := 0;
-  while not Eof(txChipsName) and (iCount < iMAX) do
+  while not Eof(txChipsName) and (iCount < 4) do
     begin
       Inc(iCount);
-      Readln(txChipsName,arrChipsName[1]);
+      Readln(txChipsName,arrChipsName[iCount]);
 
     end;
 
-     red1.Lines.Add(arrChipsName[iCount4]);
+    sChipsName := arrChipsName[iCount4];
 
+//------------------------------------------------------------------------------
 
+  iCount := 0;
+  while not Eof(txChipsKP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txChipsKP,arrChipsKP[iCount]);
 
+    end;
 
-//##################################################################################
- // Readln(txChipsName,sChipsName,iCount4);
+    rChipsKP := arrChipsKP[iCount4];
 
- // red1.Lines.Add(sChipsName);
+//------------------------------------------------------------------------------
 
+  iCount := 0;
+  while not Eof(txChipsVP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txChipsVP,arrChipsVP[iCount]);
 
+    end;
 
+    rChipsVP := arrChipsVP[iCount4];
 
-//*********************************************************************************
+//------------------------------------------------------------------------------
 
- //red1.Lines.Add(arrChips[iCount4]);
+  iCount := 0;
+  while not Eof(txChipsOor) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txChipsOor,arrChipsOor[iCount]);
+
+    end;
+
+    iAantalChips := arrChipsOor[iCount4];
+
+//******************************************************************************
+
+   iCount := 0;
+  while not Eof(txKoeldrankName) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankName,arrKoeldrankName[iCount]);
+
+    end;
+
+    sKoeldrankName := arrKoeldrankName[iCount4];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txKoeldrankKP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankKP,arrKoeldrankKP[iCount]);
+
+    end;
+
+    rKoeldrankKP := arrKoeldrankKP[iCount4];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txKoeldrankVP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankVP,arrKoeldrankVP[iCount]);
+
+    end;
+
+    rKoeldrankVP := arrKoeldrankVP[iCount4];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txKoeldrankOor) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankOor,arrKoeldrankOor[iCount]);
+
+    end;
+
+    iAantalKoeldrank := arrKoeldrankOor[iCount4];
+
+//******************************************************************************
+
+  iCount := 0;
+  while not Eof(txYsiesName) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesName,arrYsiesName[iCount]);
+
+    end;
+
+    sYsiesName := arrYsiesName[iCount4];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txYsiesKP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesKP,arrYsiesKP[iCount]);
+
+    end;
+
+    rYsiesKP := arrYsiesKP[iCount4];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txYsiesVP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesVP,arrYsiesVP[iCount]);
+
+    end;
+
+    rYsiesVP := arrYsiesVP[iCount4];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txYsiesOor) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesOor,arrYsiesOor[iCount]);
+
+    end;
+
+    iAantalYsies := arrYsiesOor[iCount4];
+
+//******************************************************************************
+
+  iCount := 0;
+   while not Eof(txGebakName) and (iCount < 4) do
+     begin
+       Inc(iCount);
+       Readln(txGebakName,arrGebakName[iCount]);
+
+     end;
+
+     sGebakName := arrGebakName[iCount4];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+   while not Eof(txGebakKP) and (iCount < 4) do
+     begin
+       Inc(iCount);
+       Readln(txGebakKP,arrGebakKP[iCount]);
+
+     end;
+
+     rGebakKP := arrGebakKP[iCount4];
+
+//------------------------------------------------------------------------------
+
+     iCount := 0;
+   while not Eof(txYsiesVP) and (iCount < 4) do
+     begin
+       Inc(iCount);
+       Readln(txYsiesVP,arrYsiesVP[iCount]);
+
+     end;
+
+     rYsiesVP := arrYsiesVP[iCount4];
+
+//------------------------------------------------------------------------------
+
+     iCount := 0;
+   while not Eof(txYsiesOor) and (iCount < 4) do
+     begin
+       Inc(iCount);
+       Readln(txYsiesOor,arrYsiesOor[iCount]);
+
+     end;
+
+     iGebakOor := arrYsiesOor[iCount4];
+
+//##############################################################################
 
   pnlChipsKoste.caption := FloatToStrF(rChipsBedrag,ffCurrency,10,2);
 

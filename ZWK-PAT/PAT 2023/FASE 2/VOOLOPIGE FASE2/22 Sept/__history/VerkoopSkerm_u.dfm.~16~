@@ -241,6 +241,7 @@ object frmVerkope: TfrmVerkope
     ParentBackground = False
     ParentFont = False
     TabOrder = 25
+    OnClick = pnlKeldrankBestelClick
   end
   object pnlYsiesBestel: TPanel
     Left = 271
@@ -257,6 +258,7 @@ object frmVerkope: TfrmVerkope
     ParentBackground = False
     ParentFont = False
     TabOrder = 26
+    OnClick = pnlYsiesBestelClick
   end
   object pnlGebakBestel: TPanel
     Left = 271
@@ -273,6 +275,7 @@ object frmVerkope: TfrmVerkope
     ParentBackground = False
     ParentFont = False
     TabOrder = 27
+    OnClick = pnlGebakBestelClick
   end
   object pnlChipsKoste: TPanel
     Left = 456
@@ -354,16 +357,18 @@ object frmVerkope: TfrmVerkope
     NumGlyphs = 2
     TabOrder = 36
   end
-  object redGr11: TRichEdit
-    Left = 271
-    Top = 111
-    Width = 185
-    Height = 89
+  object red1: TRichEdit
+    Left = 120
+    Top = 117
+    Width = 504
+    Height = 214
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
     Font.Name = 'Segoe UI'
     Font.Style = []
+    Lines.Strings = (
+      '')
     ParentFont = False
     TabOrder = 37
   end

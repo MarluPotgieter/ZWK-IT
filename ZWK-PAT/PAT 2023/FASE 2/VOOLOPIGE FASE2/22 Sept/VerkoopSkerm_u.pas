@@ -48,7 +48,6 @@ type
     btnStats: TButton;
     btnHulp: TButton;
     bmbClose: TBitBtn;
-    red1: TRichEdit;
     procedure btnStatsClick(Sender: TObject);
     procedure btnWelkomClick(Sender: TObject);
     procedure btnBetaalClick(Sender: TObject);
@@ -197,47 +196,7 @@ begin
 
 //##############################################################################
 
-  AssignFile(txKoeldrankName,'KoeldrankName.txt');
-
-  try
-    Reset(txKoeldrankName);
-  except
-    ShowMessage('KoeldrankName.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txKoeldrankKP,'KoeldrankKP.txt');
-
-  try
-    Reset(txKoeldrankKP);
-  except
-    ShowMessage('KoeldrankKP.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txKoeldrankVP,'KoeldrankVP.txt');
-
-  try
-    Reset(txKoeldrankVP);
-  except
-    ShowMessage('KoeldrankVP.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txKoeldrankOor,'KoeldrankOor.txt');
-
-  try
-    Reset(txKoeldrankOor);
-  except
-    ShowMessage('KoeldrankOor.txt does not exist');
-    Exit;
-  end;
+  
 
 //##############################################################################
 
@@ -506,7 +465,7 @@ begin
 
      end;
 
-     sGebakName := arrGebakName[iCount4];
+     sGebak := arrGebakName[iCount4];
 
 //------------------------------------------------------------------------------
 
@@ -567,6 +526,49 @@ end;
 procedure TfrmVerkope.pnlKeldrankBestelClick(Sender: TObject);
 
 begin
+
+  AssignFile(txKoeldrankName,'KoeldrankName.txt');
+
+  try
+    Reset(txKoeldrankName);
+  except
+    ShowMessage('KoeldrankName.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txKoeldrankKP,'KoeldrankKP.txt');
+
+  try
+    Reset(txKoeldrankKP);
+  except
+    ShowMessage('KoeldrankKP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txKoeldrankVP,'KoeldrankVP.txt');
+
+  try
+    Reset(txKoeldrankVP);
+  except
+    ShowMessage('KoeldrankVP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txKoeldrankOor,'KoeldrankOor.txt');
+
+  try
+    Reset(txKoeldrankOor);
+  except
+    ShowMessage('KoeldrankOor.txt does not exist');
+    Exit;
+  end;
+
 
   iAantalKoeldrank := sedKoeldrank.Value;
 

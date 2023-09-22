@@ -1,42 +1,41 @@
-object frmVerkope: TfrmVerkope
+object frmStats: TfrmStats
   Left = 0
   Top = 0
-  Caption = 'Verkope'
+  Caption = 'Stats'
   ClientHeight = 441
-  ClientWidth = 702
+  ClientWidth = 576
   Color = clMoneyGreen
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  OnActivate = FormActivate
   TextHeight = 15
   object rgChips: TRadioGroup
-    Left = 8
+    Left = 0
     Top = 0
-    Width = 616
+    Width = 129
     Height = 105
     TabOrder = 0
   end
   object rgKoeldrank: TRadioGroup
     Left = 0
     Top = 111
-    Width = 616
+    Width = 129
     Height = 105
     TabOrder = 1
   end
   object rgYsies: TRadioGroup
     Left = 0
-    Top = 216
-    Width = 616
+    Top = 217
+    Width = 129
     Height = 105
     TabOrder = 2
   end
   object rgGebak: TRadioGroup
     Left = 0
     Top = 328
-    Width = 616
+    Width = 129
     Height = 105
     TabOrder = 3
   end
@@ -59,7 +58,7 @@ object frmVerkope: TfrmVerkope
   object rbBigCornBites: TRadioButton
     Left = 8
     Top = 54
-    Width = 113
+    Width = 121
     Height = 17
     Caption = 'BigCornBites'
     TabOrder = 6
@@ -168,193 +167,147 @@ object frmVerkope: TfrmVerkope
     Caption = 'Quiche'
     TabOrder = 19
   end
-  object sedChips: TSpinEdit
-    Left = 144
-    Top = 8
-    Width = 121
-    Height = 24
-    MaxValue = 0
-    MinValue = 0
-    TabOrder = 20
-    Value = 0
-  end
-  object sedKoeldrank: TSpinEdit
-    Left = 144
-    Top = 117
-    Width = 121
-    Height = 24
-    MaxValue = 0
-    MinValue = 0
-    TabOrder = 21
-    Value = 0
-  end
-  object sedYsies: TSpinEdit
-    Left = 144
-    Top = 222
-    Width = 121
-    Height = 24
-    MaxValue = 0
-    MinValue = 0
-    TabOrder = 22
-    Value = 0
-  end
-  object sedGebak: TSpinEdit
-    Left = 144
-    Top = 333
-    Width = 121
-    Height = 24
-    MaxValue = 0
-    MinValue = 0
-    TabOrder = 23
-    Value = 0
-  end
-  object pnlCHipsBestel: TPanel
-    Left = 271
-    Top = 8
-    Width = 185
-    Height = 86
-    BevelOuter = bvSpace
-    Caption = 'Voeg By'
-    Color = clActiveBorder
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -28
-    Font.Name = 'Arial'
-    Font.Style = []
-    ParentBackground = False
-    ParentFont = False
-    TabOrder = 24
-    OnClick = pnlCHipsBestelClick
-  end
-  object pnlKeldrankBestel: TPanel
-    Left = 271
-    Top = 111
-    Width = 185
-    Height = 86
-    Caption = 'Voeg By'
-    Color = clActiveBorder
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -28
-    Font.Name = 'Arial'
-    Font.Style = []
-    ParentBackground = False
-    ParentFont = False
-    TabOrder = 25
-    OnClick = pnlKeldrankBestelClick
-  end
-  object pnlYsiesBestel: TPanel
-    Left = 271
-    Top = 222
-    Width = 185
-    Height = 86
-    Caption = 'Voeg By'
-    Color = clActiveBorder
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -28
-    Font.Name = 'Arial'
-    Font.Style = []
-    ParentBackground = False
-    ParentFont = False
-    TabOrder = 26
-    OnClick = pnlYsiesBestelClick
-  end
-  object pnlGebakBestel: TPanel
-    Left = 271
-    Top = 333
-    Width = 185
-    Height = 86
-    Caption = 'Voeg By'
-    Color = clActiveBorder
-    Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -28
-    Font.Name = 'Arial'
-    Font.Style = []
-    ParentBackground = False
-    ParentFont = False
-    TabOrder = 27
-    OnClick = pnlGebakBestelClick
-  end
-  object pnlChipsKoste: TPanel
-    Left = 456
-    Top = 8
-    Width = 153
-    Height = 86
-    Color = clActiveBorder
-    ParentBackground = False
-    TabOrder = 28
-  end
-  object pnlKoeldrankKoste: TPanel
-    Left = 456
-    Top = 111
-    Width = 153
-    Height = 86
-    Color = clActiveBorder
-    ParentBackground = False
-    TabOrder = 29
-  end
-  object pnlYsiesKoste: TPanel
-    Left = 456
-    Top = 222
-    Width = 153
-    Height = 86
-    Color = clActiveBorder
-    ParentBackground = False
-    TabOrder = 30
-  end
-  object pnlGebakKoste: TPanel
-    Left = 456
-    Top = 333
-    Width = 153
-    Height = 86
-    Color = clActiveBorder
-    ParentBackground = False
-    TabOrder = 31
-  end
   object btnWelkom: TButton
-    Left = 622
+    Left = 493
     Top = 8
     Width = 75
     Height = 25
     Caption = 'Welkom'
-    TabOrder = 32
+    TabOrder = 20
     OnClick = btnWelkomClick
   end
   object btnBetaal: TButton
-    Left = 622
+    Left = 493
     Top = 39
     Width = 75
     Height = 25
     Caption = 'Betaal'
-    TabOrder = 33
+    TabOrder = 21
     OnClick = btnBetaalClick
   end
-  object btnStats: TButton
-    Left = 622
-    Top = 101
-    Width = 75
-    Height = 25
-    Caption = 'Stats'
-    TabOrder = 34
-    OnClick = btnStatsClick
+  object ledKP: TLabeledEdit
+    Left = 184
+    Top = 28
+    Width = 121
+    Height = 23
+    EditLabel.Width = 44
+    EditLabel.Height = 15
+    EditLabel.Caption = 'Kos Prys'
+    ReadOnly = True
+    TabOrder = 22
+    Text = ''
   end
-  object btnHulp: TButton
-    Left = 622
+  object ledVP: TLabeledEdit
+    Left = 184
+    Top = 71
+    Width = 121
+    Height = 23
+    EditLabel.Width = 73
+    EditLabel.Height = 15
+    EditLabel.Caption = 'Verkoops Prys'
+    ReadOnly = True
+    TabOrder = 23
+    Text = ''
+  end
+  object ledWins: TLabeledEdit
+    Left = 184
+    Top = 117
+    Width = 121
+    Height = 23
+    EditLabel.Width = 66
+    EditLabel.Height = 15
+    EditLabel.Caption = 'Wins Bedrag'
+    ReadOnly = True
+    TabOrder = 24
+    Text = ''
+  end
+  object ledWinsP: TLabeledEdit
+    Left = 184
+    Top = 163
+    Width = 121
+    Height = 23
+    EditLabel.Width = 39
+    EditLabel.Height = 15
+    EditLabel.Caption = 'Wins %'
+    ReadOnly = True
+    TabOrder = 25
+    Text = ''
+  end
+  object ledAantaVerkoop: TLabeledEdit
+    Left = 184
+    Top = 219
+    Width = 121
+    Height = 23
+    EditLabel.Width = 80
+    EditLabel.Height = 15
+    EditLabel.Caption = 'Aantal Verkoop'
+    ReadOnly = True
+    TabOrder = 26
+    Text = ''
+  end
+  object btnStatsShow: TButton
+    Left = 328
+    Top = 27
+    Width = 75
+    Height = 37
+    Caption = 'Vertoon Statistiek'
+    TabOrder = 27
+    WordWrap = True
+  end
+  object pnlInkomstes: TPanel
+    Left = 184
+    Top = 255
+    Width = 185
+    Height = 41
+    Caption = 'Inkomste:'
+    Color = clActiveBorder
+    ParentBackground = False
+    TabOrder = 28
+  end
+  object pnlUItgawes: TPanel
+    Left = 184
+    Top = 302
+    Width = 185
+    Height = 41
+    Caption = 'Uitgawes:'
+    Color = clActiveBorder
+    ParentBackground = False
+    TabOrder = 29
+  end
+  object pnlNettoWins: TPanel
+    Left = 184
+    Top = 349
+    Width = 185
+    Height = 41
+    Caption = 'Netto Wins:'
+    Color = clActiveBorder
+    ParentBackground = False
+    TabOrder = 30
+  end
+  object btnVerkope: TButton
+    Left = 493
     Top = 70
     Width = 75
     Height = 25
+    Caption = 'Verkope'
+    TabOrder = 31
+    OnClick = btnVerkopeClick
+  end
+  object btnHelp: TButton
+    Left = 493
+    Top = 101
+    Width = 75
+    Height = 25
     Caption = 'Hulp'
-    TabOrder = 35
+    TabOrder = 32
   end
   object bmbClose: TBitBtn
-    Left = 622
+    Left = 493
     Top = 408
     Width = 75
     Height = 25
     Kind = bkClose
     NumGlyphs = 2
-    TabOrder = 36
+    TabOrder = 33
   end
 end

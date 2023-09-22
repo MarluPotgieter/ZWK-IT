@@ -12,6 +12,7 @@ object frmWelkom: TfrmWelkom
   Font.Style = []
   Position = poDesigned
   OnActivate = FormActivate
+  OnCreate = FormCreate
   TextHeight = 15
   object imgLogo: TImage
     Left = -8
@@ -258,9 +259,12 @@ object frmWelkom: TfrmWelkom
     Top = 56
     Width = 121
     Height = 23
+    Hint = 'Username: admin + Password: admin123#'
     EditLabel.Width = 91
     EditLabel.Height = 15
     EditLabel.Caption = 'Gebruikers Naam'
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 0
     Text = ''
   end
@@ -273,7 +277,7 @@ object frmWelkom: TfrmWelkom
     EditLabel.Height = 15
     EditLabel.Caption = 'Wag Woord'
     TabOrder = 1
-    Text = ''
+    Text = 'admin123#'
   end
   object btnSignIn: TButton
     Left = 32
@@ -301,17 +305,12 @@ object frmWelkom: TfrmWelkom
     NumGlyphs = 2
     TabOrder = 4
   end
-  object redGr11: TRichEdit
-    Left = 264
-    Top = 120
-    Width = 185
-    Height = 321
-    Font.Charset = ANSI_CHARSET
-    Font.Color = clWindowText
-    Font.Height = -12
-    Font.Name = 'Segoe UI'
-    Font.Style = []
-    ParentFont = False
+  object btnDarkMode: TButton
+    Left = 304
+    Top = 160
+    Width = 75
+    Height = 25
+    Caption = 'btnDarkMode'
     TabOrder = 5
   end
 end
