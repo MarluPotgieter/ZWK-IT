@@ -2,8 +2,8 @@ object frmVerkope: TfrmVerkope
   Left = 0
   Top = 0
   Caption = 'Verkope'
-  ClientHeight = 528
-  ClientWidth = 703
+  ClientHeight = 508
+  ClientWidth = 691
   Color = clMoneyGreen
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

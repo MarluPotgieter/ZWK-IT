@@ -92,10 +92,10 @@ end;
 procedure TfrmVerkope.btnHulpClick(Sender: TObject);
 begin
 
-  // Set the URL you want to open in the web browser
+
   WIKI := 'https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Main_Page';
 
-  // Use ShellExecute to open the URL in the default web browser
+
   ShellExecute(0, 'open', PChar(WIKI), nil, nil, SW_SHOWNORMAL);
 
 end;
@@ -125,7 +125,7 @@ procedure TfrmVerkope.FormActivate(Sender: TObject);
 
 begin
 
-  sChipsName := ' ';
+  sChipsName := ' ';              //initialiseer die veranderlikes
   sKoeldrankName := ' ';
   sGebakName := ' ';
   sYsiesName := ' ';
@@ -153,7 +153,7 @@ begin
   rTOTBedrag := 0;
 
 
-  if sUser = 'user' then
+  if sUser = 'user' then         //steek die btnStaats weg as die gebruiker nie 'n admin is nie
 
     btnStats.Visible := False
 
@@ -169,7 +169,7 @@ procedure TfrmVerkope.pnlCHipsBestelClick(Sender: TObject);
 
 begin
 
-  if rbLays.checked = True then
+  if rbLays.checked = True then             //Gee die posisie van 'n produk in 'n array
 
       iCount4 := 1;
 
@@ -234,7 +234,7 @@ begin
 //******************************************************************************
 
   iCount := 0;
-  while not Eof(txChipsName) and (iCount < 4) do
+  while not Eof(txChipsName) and (iCount < 4) do    //Stoor die text-file se inhoud in 'n array
     begin
       Inc(iCount);
       Readln(txChipsName,arrChipsName[iCount]);
@@ -293,6 +293,7 @@ begin
 
       ShowMessage('Daar is meer ' + sChipsName + ' bestel as in vooraad. Daar is ' + IntToStr(iChipsOor) + ' in vooraad');
       Exit;
+      //Toets dat die aantal vooraad wat bestel is nie meer as die in voorraad is nie
 
     end
 
@@ -308,20 +309,14 @@ begin
 
       pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
-      //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag));
-      //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag, ffCurrency, 10, 2));
 
-
-
-      // Check if the other form is currently created
-
-      if iCount4 = 3 then
+      if iCount4 = 3 then     //Verander die spasie tussen produkte op die strokie sodat hulle in lyn is
 
         if Assigned(frmBetaal) then
 
          begin
 
-           // Access the memo on the other form and add text to it
+           // Gebruik die memo op frmBetaal om produkte by te voeg
            frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
 
            end
@@ -330,7 +325,7 @@ begin
 
          begin
 
-            // Handle the case where the other form is not created
+            // Hanteer die geval waar die form nie bestaan nie
             ShowMessage('The other form is not currently open or created.');
 
          end
@@ -341,7 +336,7 @@ begin
 
             begin
 
-              // Access the memo on the other form and add text to it
+              // Gebruik die memo op frmBetaal om produkte by te voeg
              frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
 
            end
@@ -350,7 +345,7 @@ begin
 
            begin
 
-              // Handle the case where the other form is not created
+              // Hanteer die geval waar die form nie bestaan nie
               ShowMessage('The other form is not currently open or created.');
 
             end;

@@ -526,7 +526,7 @@ begin
 
   if iCount44 > 0 then
 
-    begin  //Vertoon die statistieke van verskillende produkte in slegs leesbare labled edits
+    begin
 
       ledKP.Text := FloatToStrF(rChipsKP,ffCurrency,10,2);
       ledVP.Text := FloatToStrF(rChipsVP,ffCurrency,10,2);

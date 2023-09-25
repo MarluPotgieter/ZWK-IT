@@ -64,6 +64,7 @@ procedure TfrmBetaal.btnKaartClick(Sender: TObject);
 begin
 
   ShowMessage('Aantal Betaalbaar: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2));
+  //Vertoon die bedrag wat betaalbaar is
 
 end;
 
@@ -71,7 +72,7 @@ procedure TfrmBetaal.btnKlaarClick(Sender: TObject);
 begin
 
 
-  memBetaal.Lines.SaveToFile('Strokie_' + IntToStr(iStrokieNr) + '.txt' );
+  memBetaal.Lines.SaveToFile('Strokie_' + IntToStr(iStrokieNr) + '.txt' ); //Stoor die strokie in 'n text-file
   memBetaal.Clear;
   iStrokieNr := iStrokieNr + 1;
   memBetaal.Lines.Add(' ');
@@ -92,7 +93,7 @@ begin
 
   rKleinGeld := rKontant - rTOTBedrag;
 
-  if rKleinGeld < 0 then
+  if rKleinGeld < 0 then  //toets of die kontant genoeg gaan wees om die kostes te dek
     begin
 
       ShowMessage('Kontant is te min');
@@ -137,11 +138,7 @@ procedure TfrmBetaal.FormActivate(Sender: TObject);
 begin
 
 
- { memBetaal.Lines.Add('Strokie Nommer: ' + IntToStr(iStrokieNr));
-  memBetaal.Lines.Add(TimeToStr(Time));
-  memBetaal.Lines.Add(DateToStr(Date));
-  memBetaal.Lines.Add(' ');
-  Inc(iStrokieNr);  }
+
 
   rBTW := rTOTBedrag * (15/100);
   rSubtotal := rTOTBedrag - rBTW;
@@ -154,6 +151,7 @@ begin
   memBetaal.Lines.Add('Sub-Totaal' + #9 + #9 + #9 + #9 + FloatToStrF(rSubtotal,ffCurrency,10,2));
   memBetaal.Lines.Add('BTW' + #9 + #9 + #9 + #9 + #9 + FloatToStrF(rBTW,ffCurrency,10,2));
   memBetaal.Lines.Add('Totaal' + #9 + #9 + #9 + #9 + #9 + FloatToStrF(rTOTBedrag,ffCurrency,10,2));
+  //Voeg die Subtotaal, BTW en totaal by die strokie by
 
 end;
 
@@ -167,7 +165,7 @@ begin
   memBetaal.Lines.Add(' ');
   memBetaal.Lines.Add('Produk Naam' + #9 + 'Prys Elk' + #9 + #9 + 'Aantal' + #9 + 'TotalePrys');
   memBetaal.Lines.Add(' ');
-
+  //vertoon die formaat in die strokie
 
 
   Inc(iStrokieNr);

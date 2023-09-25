@@ -2,8 +2,8 @@ object frmWelkom: TfrmWelkom
   Left = 0
   Top = 0
   Caption = 'Welkom'
-  ClientHeight = 407
-  ClientWidth = 606
+  ClientHeight = 387
+  ClientWidth = 594
   Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText

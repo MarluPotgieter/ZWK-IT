@@ -86,10 +86,10 @@ end;
 procedure TfrmWelkom.btnHelpClick(Sender: TObject);
 begin
 
-  // Set the URL you want to open in the web browser
+  // Verklaar die URL om in die webblaaier oop te maak
   WIKI := 'https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Main_Page';
 
-  // Use ShellExecute to open the URL in the default web browser
+  // gebruik ShellExecute om dit oop te maak
   ShellExecute(0, 'open', PChar(WIKI), nil, nil, SW_SHOWNORMAL);
 
 end;
@@ -101,15 +101,15 @@ begin
   sPWordU := ledPassWord.Text;
 
 
-  if sUserN.Length > 0 then
+  if sUserN.Length > 0 then //toets dat 'n username in gesleutel is
 
     Begin
 
-      if sPWordU.Length > 0 then
+      if sPWordU.Length > 0 then //toets dat 'n wagwoord in gesleutel is
 
         begin
 
-          if (sUserN = 'admin') and (sPWordU = 'admin123#') then
+          if (sUserN = 'admin') and (sPWordU = 'admin123#') then //toets dat die username en wagwoord geldig is
 
             begin
               sUser := 'admin';
@@ -170,10 +170,10 @@ begin
 
 //##############################################################################
 
-  AssignFile(txChipsName,'ChipsName.txt');
+  AssignFile(txChipsName,'ChipsName.txt');  //stoor die inhoud van text-files in variables
 
-  try
-    Reset(txChipsName);
+  try                    //toets dat dit reg gestoor is en dat die file bestaan
+    Reset(txChipsName);  //Dit word weer herhaal later, hierdie is om 'n vroë waarskuwing te gee as 'n file weg is
   except
      ShowMessage('ChipsName.txt does not exist');
      Exit;
