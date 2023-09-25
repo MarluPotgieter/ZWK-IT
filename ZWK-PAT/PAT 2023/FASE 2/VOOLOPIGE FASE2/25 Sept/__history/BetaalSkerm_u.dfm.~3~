@@ -16,13 +16,13 @@ object frmBetaal: TfrmBetaal
   object memBetaal: TMemo
     Left = 0
     Top = 8
-    Width = 393
+    Width = 217
     Height = 433
     Color = clActiveBorder
     TabOrder = 0
   end
   object pnlBetal: TPanel
-    Left = 394
+    Left = 223
     Top = 8
     Width = 185
     Height = 105
@@ -32,7 +32,7 @@ object frmBetaal: TfrmBetaal
     TabOrder = 1
   end
   object btnKaart: TButton
-    Left = 394
+    Left = 223
     Top = 119
     Width = 75
     Height = 25
@@ -40,7 +40,7 @@ object frmBetaal: TfrmBetaal
     TabOrder = 2
   end
   object btnKontant: TButton
-    Left = 394
+    Left = 223
     Top = 150
     Width = 75
     Height = 25
@@ -48,7 +48,7 @@ object frmBetaal: TfrmBetaal
     TabOrder = 3
   end
   object btnKlaar: TButton
-    Left = 491
+    Left = 320
     Top = 119
     Width = 88
     Height = 25
@@ -58,7 +58,7 @@ object frmBetaal: TfrmBetaal
   end
   object btnVerkope: TButton
     Left = 504
-    Top = 311
+    Top = 47
     Width = 75
     Height = 25
     Caption = 'Verkope'
@@ -67,7 +67,7 @@ object frmBetaal: TfrmBetaal
   end
   object btnWelkom: TButton
     Left = 504
-    Top = 280
+    Top = 16
     Width = 75
     Height = 25
     Caption = 'Welkom'
@@ -76,7 +76,7 @@ object frmBetaal: TfrmBetaal
   end
   object btnStats: TButton
     Left = 504
-    Top = 373
+    Top = 109
     Width = 75
     Height = 25
     Caption = 'Stats'
@@ -85,7 +85,7 @@ object frmBetaal: TfrmBetaal
   end
   object btnHelp: TButton
     Left = 504
-    Top = 342
+    Top = 78
     Width = 75
     Height = 25
     Caption = 'Hulp'

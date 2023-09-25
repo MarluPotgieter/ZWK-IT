@@ -8,7 +8,7 @@ uses
 
 type
   TfrmBetaal = class(TForm)
-    memBetaal: TMemo;
+
     pnlBetal: TPanel;
     btnKaart: TButton;
     btnKontant: TButton;
@@ -91,7 +91,6 @@ begin
   memBetaal.Lines.Add('Strokie Nommer: ' + IntToStr(iStrokieNr));
   memBetaal.Lines.Add(TimeToStr(Time));
   memBetaal.Lines.Add(DateToStr(Date));
-  memBetaal.Lines.Add(' ');
   Inc(iStrokieNr);
 
 end;
@@ -104,7 +103,6 @@ begin
   memBetaal.Lines.Add(TimeToStr(Time));
   memBetaal.Lines.Add(DateToStr(Date));
   memBetaal.Lines.Add(' ');
-  memBetaal.Lines.Add('Produk Naam' + #9 + 'Prys Elk' + #9 + 'Aantal' + #9 + 'TotalePrys');
   Inc(iStrokieNr);
 
 end;

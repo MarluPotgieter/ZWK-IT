@@ -48,6 +48,7 @@ type
     btnStats: TButton;
     btnHulp: TButton;
     bmbClose: TBitBtn;
+    pnlTOTBegrag: TPanel;
     procedure btnStatsClick(Sender: TObject);
     procedure btnWelkomClick(Sender: TObject);
     procedure btnBetaalClick(Sender: TObject);
@@ -248,6 +249,32 @@ begin
 
   pnlChipsKoste.caption := FloatToStrF(rChipsBedrag,ffCurrency,10,2);
 
+  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
+
+  //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag));
+  //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag, ffCurrency, 10, 2));
+
+
+
+   // Check if the other form is currently created
+  if Assigned(frmBetaal) then
+    begin
+
+     // Access the memo on the other form and add text to it
+      BetaalSkerm_u.memBetaal.Lines.Add('Text to add to memo on the other form');
+
+    end
+
+  else
+
+    begin
+
+     // Handle the case where the other form is not created
+     ShowMessage('The other form is not currently open or created.');
+
+    end;
 
   sedChips.clear;
 
@@ -369,7 +396,13 @@ begin
 
   iAantalGebak := sedGebak.Value;
 
-  pnlGebakKoste.caption := FloatToStrF((rGebakVP * iAantalGebak),ffCurrency,10,2);
+  rGebakBedrag := rGebakBedrag + (rGebakVP * iAantalGebak);
+
+  pnlGebakKoste.caption := FloatToStrF(rGebakBedrag,ffCurrency,10,2);
+
+  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
   sedGebak.Clear;
 
@@ -492,8 +525,11 @@ begin
 
   rKoeldrankBedrag := rKoeldrankBedrag + (rKoeldrankKP * iAantalKoeldrank);
 
-  pnlKoeldrankKoste.caption := FloatToStrF((rKoeldrankKP * iAantalKoeldrank),ffCurrency,10,2);
+  pnlKoeldrankKoste.caption := FloatToStrF(rKoeldrankBedrag,ffCurrency,10,2);
 
+  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
   sedKoeldrank.Clear;
 
@@ -611,10 +647,13 @@ begin
 
   iAantalYsies := sedYsies.Value;
 
-  iAantalYsies := sedYsies.Value;
+  rYsiesBedrag := rYsiesBedrag + (rYsiesVP * iAantalYsies);
 
-  pnlYsiesKoste.caption := FloatToStrF((rYsiesVP * iAantalYsies),ffCurrency,10,2);
+  pnlYsiesKoste.caption := FloatToStrF(rYsiesBedrag,ffCurrency,10,2);
 
+  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
   sedYsies.Clear;
 

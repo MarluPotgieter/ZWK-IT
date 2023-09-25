@@ -253,7 +253,28 @@ begin
 
   pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
-  memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP,ffCurrency,10,2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag));
+  //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag));
+  //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag, ffCurrency, 10, 2));
+
+
+
+   // Check if the other form is currently created
+  if Assigned(frmBetaal) then
+    begin
+
+     // Access the memo on the other form and add text to it
+      frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag, ffCurrency, 10, 2));
+
+    end
+
+  else
+
+    begin
+
+     // Handle the case where the other form is not created
+     ShowMessage('The other form is not currently open or created.');
+
+    end;
 
   sedChips.clear;
 
