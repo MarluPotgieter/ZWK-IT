@@ -104,8 +104,10 @@ begin
   memBetaal.Lines.Add(TimeToStr(Time));
   memBetaal.Lines.Add(DateToStr(Date));
   memBetaal.Lines.Add(' ');
-  memBetaal.Lines.Add('Produk Naam' + #9 + 'Prys Elk' + #9 + 'Aantal' + #9 + 'TotalePrys');
+ // memBetaal.Lines.Add('Produk Naam' + #9 + #9 + 'Prys Elk' + #9 + 'Aantal' + #9 + 'TotalePrys');
+  memBetaal.Lines.Add(' ');
   Inc(iStrokieNr);
+
 
 end;
 

@@ -263,7 +263,7 @@ begin
     begin
 
      // Access the memo on the other form and add text to it
-      frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag, ffCurrency, 10, 2));
+      frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
 
     end
 
@@ -404,6 +404,23 @@ begin
 
   pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
+  if Assigned(frmBetaal) then
+    begin
+
+     // Access the memo on the other form and add text to it
+      frmBetaal.memBetaal.Lines.Add(sGebakName + #9 + FloatToStrF(rGebakVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalGebak) + #9 + FloatToStrF((rGebakVP * iAantalGebak), ffCurrency, 10, 2));
+
+    end
+
+  else
+
+    begin
+
+     // Handle the case where the other form is not created
+     ShowMessage('The other form is not currently open or created.');
+
+    end;
+
   sedGebak.Clear;
 
 end;
@@ -531,6 +548,23 @@ begin
 
   pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
+  if Assigned(frmBetaal) then
+    begin
+
+     // Access the memo on the other form and add text to it
+      frmBetaal.memBetaal.Lines.Add(skoeldrankName + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
+
+    end
+
+  else
+
+    begin
+
+     // Handle the case where the other form is not created
+     ShowMessage('The other form is not currently open or created.');
+
+    end;
+
   sedKoeldrank.Clear;
 
 end;
@@ -654,6 +688,23 @@ begin
   rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
 
   pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
+
+  if Assigned(frmBetaal) then
+    begin
+
+     // Access the memo on the other form and add text to it
+      frmBetaal.memBetaal.Lines.Add(sYsiesName + #9 + FloatToStrF(rYsiesVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalYsies) + #9 + FloatToStrF((rYsiesVP * iAantalYsies), ffCurrency, 10, 2));
+
+    end
+
+  else
+
+    begin
+
+     // Handle the case where the other form is not created
+     ShowMessage('The other form is not currently open or created.');
+
+    end;
 
   sedYsies.Clear;
 

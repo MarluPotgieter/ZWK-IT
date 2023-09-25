@@ -10,6 +10,7 @@ uses
 
 const
   iMAX = 5;
+  BTW = 15/100;
 
 type
   TfrmWelkom = class(TForm)
