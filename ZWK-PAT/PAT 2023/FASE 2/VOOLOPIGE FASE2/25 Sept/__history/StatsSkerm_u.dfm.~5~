@@ -246,8 +246,8 @@ object frmStats: TfrmStats
     Text = ''
   end
   object btnStatsShow: TButton
-    Left = 327
-    Top = 33
+    Left = 328
+    Top = 27
     Width = 75
     Height = 37
     Caption = 'Vertoon Statistiek'

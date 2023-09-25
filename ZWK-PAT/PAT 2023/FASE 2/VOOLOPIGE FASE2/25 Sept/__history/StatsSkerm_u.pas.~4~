@@ -509,53 +509,6 @@ begin
 
     iYsiesOor := arrYsiesOor[iCount66];
 
-//==============================================================================
-
-  if iCount44 > 0 then
-
-    begin
-
-      ledKP.Text := FloatToStrF(rChipsKP,ffCurrency,10,2);
-      ledVP.Text := FloatToStrF(rChipsVP,ffCurrency,10,2);
-      ledWins.Text := FloatToStrF((rChipsVP - rChipsKP),ffCurrency,10,2);
-      ledWinsP.Text := FloatToStrF((((rChipsVP - rChipsKP) / rChipsKP) * 100), ffFixed, 10, 2) + '%';
-
-    end;
-
-      if iCount55 > 0 then
-
-        begin
-
-          ledKP.Text := FloatToStrF(rKoeldrankKP,ffCurrency,10,2);
-          ledVP.Text := FloatToStrF(rKoeldrankVP,ffCurrency,10,2);
-          ledWins.Text := FloatToStrF((rKoeldrankVP - rKoeldrankKP),ffCurrency,10,2);
-          ledWinsP.Text := FloatToStrF((((rKoeldrankVP - rKoeldrankKP) / rKoeldrankKP) * 100), ffFixed, 10, 2) + '%';
-
-        end;
-
-          if iCount66 > 0 then
-
-            begin
-
-              ledKP.Text := FloatToStrF(rYsiesKP,ffCurrency,10,2);
-              ledVP.Text := FloatToStrF(rYsiesVP,ffCurrency,10,2);
-              ledWins.Text := FloatToStrF((rYsiesVP - rYsiesKP),ffCurrency,10,2);
-              ledWinsP.Text := FloatToStrF((((rYsiesVP - rYsiesKP) / rYsiesKP) * 100), ffFixed, 10, 2) + '%';
-
-            end;
-
-              if iCount77 > 0 then
-
-                begin
-
-                  ledKP.Text := FloatToStrF(rGebakKP,ffCurrency,10,2);
-                  ledVP.Text := FloatToStrF(rGebakVP,ffCurrency,10,2);
-                  ledWins.Text := FloatToStrF((rGebakVP - rGebakKP),ffCurrency,10,2);
-                  ledWinsP.Text := FloatToStrF((((rGebakVP - rGebakKP) / rGebakKP) * 100), ffFixed, 10, 2) + '%';
-
-                end;
-
-
 end;
 
 procedure TfrmStats.btnVerkopeClick(Sender: TObject);
