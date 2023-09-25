@@ -306,11 +306,11 @@ object frmWelkom: TfrmWelkom
     TabOrder = 4
   end
   object btnDarkMode: TButton
-    Left = 304
-    Top = 160
+    Left = 32
+    Top = 237
     Width = 75
     Height = 25
-    Caption = 'btnDarkMode'
+    Caption = 'Dark Mode'
     TabOrder = 5
   end
 end

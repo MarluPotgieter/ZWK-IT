@@ -48,6 +48,7 @@ type
     btnStats: TButton;
     btnHulp: TButton;
     bmbClose: TBitBtn;
+    pnlTOTBegrag: TPanel;
     procedure btnStatsClick(Sender: TObject);
     procedure btnWelkomClick(Sender: TObject);
     procedure btnBetaalClick(Sender: TObject);
@@ -248,6 +249,11 @@ begin
 
   pnlChipsKoste.caption := FloatToStrF(rChipsBedrag,ffCurrency,10,2);
 
+  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
+
+  memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP,ffCurrency,10,2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag));
 
   sedChips.clear;
 
@@ -373,6 +379,10 @@ begin
 
   pnlGebakKoste.caption := FloatToStrF(rGebakBedrag,ffCurrency,10,2);
 
+  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
+
   sedGebak.Clear;
 
 end;
@@ -496,6 +506,9 @@ begin
 
   pnlKoeldrankKoste.caption := FloatToStrF(rKoeldrankBedrag,ffCurrency,10,2);
 
+  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
   sedKoeldrank.Clear;
 
@@ -617,6 +630,9 @@ begin
 
   pnlYsiesKoste.caption := FloatToStrF(rYsiesBedrag,ffCurrency,10,2);
 
+  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
   sedYsies.Clear;
 

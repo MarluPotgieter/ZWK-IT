@@ -2,7 +2,7 @@ object frmVerkope: TfrmVerkope
   Left = 0
   Top = 0
   Caption = 'Verkope'
-  ClientHeight = 441
+  ClientHeight = 529
   ClientWidth = 702
   Color = clMoneyGreen
   Font.Charset = DEFAULT_CHARSET
@@ -356,5 +356,15 @@ object frmVerkope: TfrmVerkope
     Kind = bkClose
     NumGlyphs = 2
     TabOrder = 36
+  end
+  object pnlTOTBegrag: TPanel
+    Left = 456
+    Top = 435
+    Width = 153
+    Height = 86
+    Caption = 'Totale Prys: '
+    Color = clActiveBorder
+    ParentBackground = False
+    TabOrder = 37
   end
 end

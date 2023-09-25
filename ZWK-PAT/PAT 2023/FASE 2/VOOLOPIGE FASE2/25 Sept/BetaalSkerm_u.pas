@@ -8,7 +8,7 @@ uses
 
 type
   TfrmBetaal = class(TForm)
-    memBetaal: TMemo;
+
     pnlBetal: TPanel;
     btnKaart: TButton;
     btnKontant: TButton;
@@ -37,6 +37,7 @@ var
   Date : TDate;
   iStrokieNr : Integer;
   Time : TTime;
+  memBetaal: TMemo;
 
 implementation
 
@@ -86,11 +87,11 @@ end;
 procedure TfrmBetaal.FormActivate(Sender: TObject);
 begin
 
-  iStrokieNr := 1;
+
   memBetaal.Lines.Add('Strokie Nommer: ' + IntToStr(iStrokieNr));
   memBetaal.Lines.Add(TimeToStr(Time));
-  memBetaal.Lines.Add(DateToStr(Date))
-
+  memBetaal.Lines.Add(DateToStr(Date));
+  Inc(iStrokieNr);
 
 end;
 
@@ -101,6 +102,7 @@ begin
   memBetaal.Lines.Add('Strokie Nommer: ' + IntToStr(iStrokieNr));
   memBetaal.Lines.Add(TimeToStr(Time));
   memBetaal.Lines.Add(DateToStr(Date));
+  memBetaal.Lines.Add(' ');
   Inc(iStrokieNr);
 
 end;
