@@ -149,24 +149,16 @@ begin
 
     ShowMessage('Enter a username');
 
-
-
-
-
-
-
-
-
 end;
 
 procedure TfrmWelkom.FormActivate(Sender: TObject);
 begin
 
- //ledUserName.Clear;
- //ledPassWord.Clear;
- sUser := ' ';
- sUserN := ' ';
- sPWordU := ' ';
+  //ledUserName.Clear;
+  //ledPassWord.Clear;
+  sUser := ' ';
+  sUserN := ' ';
+  sPWordU := ' ';
 
 
 end;

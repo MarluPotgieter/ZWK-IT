@@ -281,7 +281,16 @@ begin
 
 //------------------------------------------------------------------------------
 
+  if iChipsOor <= 10 then
+
+    ShowMessage(sChipsName + ' is minder as 10 eenh. oor');
+
   iAantalChips := sedChips.Value;
+
+  if iAantalChips > iChipsOor then
+
+    ShowMessage('Daar is meer ' + sChipsName + ' bestel as in vooraad. Daar is ' + IntToStr(iChipsOor) + ' in vooraad');
+    Exit;
 
   rChipsBedrag := rChipsBedrag + (rChipsVP * iAantalChips);
 
@@ -454,9 +463,16 @@ begin
 
 //------------------------------------------------------------------------------
 
+  if iGebakOor <= 10 then
 
+    ShowMessage(sGebakName + ' is minder as 10 eenh. oor');
 
   iAantalGebak := sedGebak.Value;
+
+  if iAantalGebak > iGebakOor then
+
+    ShowMessage('Daar is meer ' + sGebakName + ' bestel as in vooraad. Daar is ' + IntToStr(iGebakOor) + ' in vooraad');
+    Exit;
 
   rGebakBedrag := rGebakBedrag + (rGebakVP * iAantalGebak);
 
@@ -600,7 +616,18 @@ begin
 
 //------------------------------------------------------------------------------
 
+  if iKoeldrankOor <= 10 then
+
+    ShowMessage(sKoeldrankName + ' is minder as 10 eenh. oor');
+
   iAantalKoeldrank := sedKoeldrank.Value;
+
+  if iAantalKoeldrank > iKoeldrankOor then
+
+    ShowMessage('Daar is meer ' + sKoeldrankName + ' bestel as in vooraad. Daar is ' + IntToStr(iKoeldrankOor) + ' in vooraad');
+    Exit;
+
+
 
   rKoeldrankBedrag := rKoeldrankBedrag + (rKoeldrankKP * iAantalKoeldrank);
 
@@ -764,7 +791,16 @@ begin
 
 //------------------------------------------------------------------------------
 
+  if iYsiesOor <= 10 then
+
+    ShowMessage(sYsiesName + ' is minder as 10 eenh. oor');
+
   iAantalYsies := sedYsies.Value;
+
+  if iAantalYsies > iYsiesOor then
+
+    ShowMessage('Daar is meer ' + sYsiesName + ' bestel as in vooraad. Daar is ' + IntToStr(iYsiesOor) + ' in vooraad');
+    Exit;
 
   rYsiesBedrag := rYsiesBedrag + (rYsiesVP * iAantalYsies);
 
