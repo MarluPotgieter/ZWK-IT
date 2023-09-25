@@ -20,6 +20,7 @@ object frmBetaal: TfrmBetaal
     Height = 433
     Color = clActiveBorder
     TabOrder = 0
+    WordWrap = False
   end
   object pnlBetal: TPanel
     Left = 394
@@ -38,6 +39,7 @@ object frmBetaal: TfrmBetaal
     Height = 25
     Caption = 'Kaart'
     TabOrder = 2
+    OnClick = btnKaartClick
   end
   object btnKontant: TButton
     Left = 394

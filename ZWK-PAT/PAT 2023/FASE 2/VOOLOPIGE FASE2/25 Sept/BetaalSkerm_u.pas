@@ -24,6 +24,7 @@ type
     procedure btnKlaarClick(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure btnKaartClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,6 +47,13 @@ implementation
 Uses
   WelkomSkerm_u, StatsSkerm_u, VerkoopSkerm_u;
 
+procedure TfrmBetaal.btnKaartClick(Sender: TObject);
+begin
+
+  ShowMessage('Aantal Betaalbaar: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2));
+
+end;
+
 procedure TfrmBetaal.btnKlaarClick(Sender: TObject);
 begin
 
@@ -54,6 +62,10 @@ begin
   memBetaal.Clear;
   iStrokieNr := iStrokieNr + 1;
   memBetaal.Lines.Add(' ');
+
+  rBTW := 0;
+  rSubtotal := 0;
+  rTOTBedrag := 0;
 
   frmBetaal.Hide;
   frmVerkope.Show;
@@ -88,11 +100,23 @@ procedure TfrmBetaal.FormActivate(Sender: TObject);
 begin
 
 
-  memBetaal.Lines.Add('Strokie Nommer: ' + IntToStr(iStrokieNr));
+ { memBetaal.Lines.Add('Strokie Nommer: ' + IntToStr(iStrokieNr));
   memBetaal.Lines.Add(TimeToStr(Time));
   memBetaal.Lines.Add(DateToStr(Date));
   memBetaal.Lines.Add(' ');
-  Inc(iStrokieNr);
+  Inc(iStrokieNr);  }
+
+  rBTW := rTOTBedrag * (15/100);
+  rSubtotal := rTOTBedrag - rBTW;
+
+  pnlBetal.Caption := 'Aantal Betaalbaar: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
+
+  memBetaal.Lines.Add('=========================================================================================================================================================================');
+  memBetaal.Lines.Add(' ');
+
+  memBetaal.Lines.Add('Sub-Totaal' + #9 + #9 + #9 + FloatToStrF(rSubtotal,ffCurrency,10,2));
+  memBetaal.Lines.Add('BTW' +#9 + #9 + #9 + #9 + FloatToStrF(rBTW,ffCurrency,10,2));
+  memBetaal.Lines.Add('Totaal' + #9 + #9 + #9 + #9 + FloatToStrF(rTOTBedrag,ffCurrency,10,2));
 
 end;
 
@@ -106,6 +130,9 @@ begin
   memBetaal.Lines.Add(' ');
  // memBetaal.Lines.Add('Produk Naam' + #9 + #9 + 'Prys Elk' + #9 + 'Aantal' + #9 + 'TotalePrys');
   memBetaal.Lines.Add(' ');
+
+
+
   Inc(iStrokieNr);
 
 

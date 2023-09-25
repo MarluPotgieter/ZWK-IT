@@ -57,8 +57,9 @@ var
   iChipsOor, iKoeldrankOor, iYsiesOor, iGebakOor : Integer;
 
   rUitgawes, rInkomstes, rWinsB, rWinsP : Real;
-  {sChipsLine, sKoeldrankLine, sYsiesLine, sGebakLine : string;
-  sChipsName, sKoeldrankName, sYsiesName, sGebakName : string; }
+
+  rBTW, rSubtotal : Real;
+
   rChipsBedrag, rKoeldrankBedrag, rYsiesBedrag, rGebakBedrag, rTOTBedrag : Real;
 
 implementation
@@ -113,8 +114,8 @@ end;
 procedure TfrmWelkom.FormActivate(Sender: TObject);
 begin
 
- ledUserName.Clear;
- ledPassWord.Clear;
+ //ledUserName.Clear;
+ //ledPassWord.Clear;
  sUser := ' ';
  sUserN := ' ';
  sPWordU := ' ';

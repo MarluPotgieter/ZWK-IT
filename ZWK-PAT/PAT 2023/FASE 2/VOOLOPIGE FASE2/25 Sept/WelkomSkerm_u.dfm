@@ -2,8 +2,8 @@ object frmWelkom: TfrmWelkom
   Left = 0
   Top = 0
   Caption = 'Welkom'
-  ClientHeight = 422
-  ClientWidth = 610
+  ClientHeight = 440
+  ClientWidth = 620
   Color = clSkyBlue
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -266,7 +266,7 @@ object frmWelkom: TfrmWelkom
     ParentShowHint = False
     ShowHint = True
     TabOrder = 0
-    Text = ''
+    Text = 'admin'
   end
   object ledPassWord: TLabeledEdit
     Left = 32
