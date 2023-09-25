@@ -1,0 +1,530 @@
+unit StatsSkerm_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Mask,
+  Vcl.Buttons;
+
+type
+  TfrmStats = class(TForm)
+    rgChips: TRadioGroup;
+    rgKoeldrank: TRadioGroup;
+    rgYsies: TRadioGroup;
+    rgGebak: TRadioGroup;
+    rbLays: TRadioButton;
+    rbDoritos: TRadioButton;
+    rbBigCornBites: TRadioButton;
+    rbFritos: TRadioButton;
+    rbCoke: TRadioButton;
+    rbSprite: TRadioButton;
+    rbFanta: TRadioButton;
+    rbCreamSoda: TRadioButton;
+    rbMVanilla: TRadioButton;
+    rbMStrawberry: TRadioButton;
+    rbWNaartjie: TRadioButton;
+    rbNMango: TRadioButton;
+    rbMuffin: TRadioButton;
+    rbToastie: TRadioButton;
+    rbCookie: TRadioButton;
+    rbQuiche: TRadioButton;
+    btnWelkom: TButton;
+    btnBetaal: TButton;
+    ledKP: TLabeledEdit;
+    ledVP: TLabeledEdit;
+    ledWins: TLabeledEdit;
+    ledWinsP: TLabeledEdit;
+    ledAantaVerkoop: TLabeledEdit;
+    btnStatsShow: TButton;
+    pnlInkomstes: TPanel;
+    pnlUItgawes: TPanel;
+    pnlNettoWins: TPanel;
+    btnVerkope: TButton;
+    btnHelp: TButton;
+    bmbClose: TBitBtn;
+    procedure btnWelkomClick(Sender: TObject);
+    procedure btnBetaalClick(Sender: TObject);
+    procedure btnVerkopeClick(Sender: TObject);
+    procedure btnStatsShowClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmStats: TfrmStats;
+
+implementation
+
+{$R *.dfm}
+
+
+Uses
+  WelkomSkerm_u, VerkoopSkerm_u, BetaalSkerm_u;
+
+
+procedure TfrmStats.btnBetaalClick(Sender: TObject);
+begin
+
+  frmStats.Hide;
+  frmBetaal.show;
+
+end;
+
+procedure TfrmStats.btnStatsShowClick(Sender: TObject);
+begin
+
+  if rbLays.checked = True then
+
+      iCount4 := 1;
+
+  if rbDoritos.checked = True then
+
+      iCount4 := 2;
+
+  if rbBigCornBites.checked = True then
+
+      iCount4 := 3;
+
+  if rbFritos.checked = True then
+
+      iCount4 := 4;
+
+
+
+//##############################################################################
+
+  AssignFile(txChipsName,'ChipsName.txt');
+
+  try
+    Reset(txChipsName);
+  except
+     ShowMessage('ChipsName.txt does not exist');
+     Exit;
+  end;
+
+
+
+   AssignFile(txChipsKP,'ChipsKP.txt');
+
+  try
+    Reset(txChipsKP);
+  except
+     ShowMessage('ChipsKP.txt does not exist');
+     Exit;
+  end;
+
+
+
+   AssignFile(txChipsVP,'ChipsVP.txt');
+
+  try
+    Reset(txChipsVP);
+  except
+     ShowMessage('ChipsVP.txt does not exist');
+     Exit;
+  end;
+
+
+
+   AssignFile(txChipsOor,'ChipsOor.txt');
+
+  try
+    Reset(txChipsOor);
+  except
+     ShowMessage('ChipsOor.txt does not exist');
+     Exit;
+  end;
+
+//******************************************************************************
+
+  iCount := 0;
+  while not Eof(txChipsName) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txChipsName,arrChipsName[iCount]);
+
+    end;
+
+    sChipsName := arrChipsName[iCount4];
+
+//------------------------------------------------------------------------------
+
+  iCount := 0;
+  while not Eof(txChipsKP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txChipsKP,arrChipsKP[iCount]);
+
+    end;
+
+    rChipsKP := arrChipsKP[iCount4];
+
+//------------------------------------------------------------------------------
+
+  iCount := 0;
+  while not Eof(txChipsVP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txChipsVP,arrChipsVP[iCount]);
+
+    end;
+
+    rChipsVP := arrChipsVP[iCount4];
+
+//------------------------------------------------------------------------------
+
+  iCount := 0;
+  while not Eof(txChipsOor) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txChipsOor,arrChipsOor[iCount]);
+
+    end;
+
+    iChipsOor := arrChipsOor[iCount4];
+
+//==============================================================================
+
+  if rbToastie.checked = True then
+
+      iCount7 := 1;
+
+  if rbMuffin.checked = True then
+
+      iCount7 := 2;
+
+  if rbCookie.checked = True then
+
+      iCount7 := 3;
+
+  if rbQuiche.checked = True then
+
+      iCount7 := 4;
+
+  AssignFile(txGebakName,'GebakName.txt');
+
+  try
+    Reset(txGebakName);
+  except
+    ShowMessage('GebakName.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txGebakKP,'GebakKP.txt');
+
+  try
+    Reset(txGebakKP);
+  except
+    ShowMessage('GebakKP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txGebakVP,'GebakVP.txt');
+
+  try
+    Reset(txGebakVP);
+  except
+    ShowMessage('GebakVP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txGebakOor,'GebakOor.txt');
+
+  try
+    Reset(txGebakOor);
+  except
+    ShowMessage('GebakOor.txt does not exist');
+    Exit;
+  end;
+
+//##############################################################################
+
+  iCount := 0;
+   while not Eof(txGebakName) and (iCount < 4) do
+     begin
+       Inc(iCount);
+       Readln(txGebakName,arrGebakName[iCount]);
+
+     end;
+
+     sGebakName := arrGebakName[iCount7];
+
+//------------------------------------------------------------------------------
+
+     iCount := 0;
+   while not Eof(txGebakVP) and (iCount < 4) do
+     begin
+       Inc(iCount);
+       Readln(txGebakVP,arrGebakVP[iCount]);
+
+     end;
+
+     rGebakVP := arrGebakVP[iCount7];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+   while not Eof(txGebakKP) and (iCount < 4) do
+     begin
+       Inc(iCount);
+       Readln(txGebakKP,arrGebakKP[iCount]);
+
+     end;
+
+     rGebakKP := arrGebakKP[iCount7];
+
+//------------------------------------------------------------------------------
+
+     iCount := 0;
+   while not Eof(txYsiesOor) and (iCount < 4) do
+     begin
+       Inc(iCount);
+       Readln(txYsiesOor,arrYsiesOor[iCount]);
+
+     end;
+
+     iGebakOor := arrGebakOor[iCount7];
+
+//==============================================================================
+
+  if rbCoke.checked = True then
+
+      iCount5 := 1;
+
+  if rbFanta.checked = True then
+
+      iCount5 := 2;
+
+  if rbSprite.checked = True then
+
+      iCount5 := 3;
+
+  if rbCreamSoda.checked = True then
+
+      iCount5 := 4;
+
+
+  AssignFile(txKoeldrankName,'KoeldrankName.txt');
+
+  try
+    Reset(txKoeldrankName);
+  except
+    ShowMessage('KoeldrankName.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txKoeldrankKP,'KoeldrankKP.txt');
+
+  try
+    Reset(txKoeldrankKP);
+  except
+    ShowMessage('KoeldrankKP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txKoeldrankVP,'KoeldrankVP.txt');
+
+  try
+    Reset(txKoeldrankVP);
+  except
+    ShowMessage('KoeldrankVP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txKoeldrankOor,'KoeldrankOor.txt');
+
+  try
+    Reset(txKoeldrankOor);
+  except
+    ShowMessage('KoeldrankOor.txt does not exist');
+    Exit;
+  end;
+
+//******************************************************************************
+
+   iCount := 0;
+  while not Eof(txKoeldrankName) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankName,arrKoeldrankName[iCount]);
+
+    end;
+
+    sKoeldrankName := arrKoeldrankName[iCount5];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txKoeldrankKP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankKP,arrKoeldrankKP[iCount]);
+
+    end;
+
+    rKoeldrankKP := arrKoeldrankKP[iCount5];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txKoeldrankVP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankVP,arrKoeldrankVP[iCount]);
+
+    end;
+
+    rKoeldrankVP := arrKoeldrankVP[iCount5];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txKoeldrankOor) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankOor,arrKoeldrankOor[iCount]);
+
+    end;
+
+    iKoeldrankOor := arrKoeldrankOor[iCount5];
+
+//==============================================================================
+
+  if rbMVanilla.checked = True then
+
+      iCount6 := 1;
+
+  if rbMStrawberry.checked = True then
+
+      iCount6 := 2;
+
+  if rbWNaartjie.checked = True then
+
+      iCount6 := 3;
+
+  if rbWMango.checked = True then
+
+      iCount6 := 4;
+
+  AssignFile(txYsiesName,'YsiesName.txt');
+
+  try
+    Reset(txYsiesName);
+  except
+    ShowMessage('YsiesName.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txYsiesKP,'YsiesKP.txt');
+
+  try
+    Reset(txYsiesKP);
+  except
+    ShowMessage('YsiesKP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txYsiesVP,'YsiesVP.txt');
+
+  try
+    Reset(txYsiesVP);
+  except
+    ShowMessage('YsiesVP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txYsiesOor,'YsiesOor.txt');
+
+  try
+    Reset(txYsiesOor);
+  except
+    ShowMessage('YsiesOor.txt does not exist');
+    Exit;
+  end;
+
+  iCount := 0;
+  while not Eof(txYsiesName) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesName,arrYsiesName[iCount]);
+
+    end;
+
+    sYsiesName := arrYsiesName[iCount6];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txYsiesKP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesKP,arrYsiesKP[iCount]);
+
+    end;
+
+    rYsiesKP := arrYsiesKP[iCount6];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txYsiesVP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesVP,arrYsiesVP[iCount]);
+
+    end;
+
+    rYsiesVP := arrYsiesVP[iCount6];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txYsiesOor) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesOor,arrYsiesOor[iCount]);
+
+    end;
+
+    iYsiesOor := arrYsiesOor[iCount6];
+
+end;
+
+procedure TfrmStats.btnVerkopeClick(Sender: TObject);
+begin
+
+  frmStats.Hide;
+  frmVerkope.show;
+
+end;
+
+procedure TfrmStats.btnWelkomClick(Sender: TObject);
+begin
+
+  frmStats.Hide;
+  frmWelkom.show;
+
+end;
+
+end.

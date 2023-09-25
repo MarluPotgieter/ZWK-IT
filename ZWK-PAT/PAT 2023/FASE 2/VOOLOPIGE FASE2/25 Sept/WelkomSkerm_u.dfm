@@ -298,7 +298,7 @@ object frmWelkom: TfrmWelkom
   end
   object bmbClose: TBitBtn
     Left = 32
-    Top = 206
+    Top = 237
     Width = 75
     Height = 25
     Kind = bkClose
@@ -307,10 +307,13 @@ object frmWelkom: TfrmWelkom
   end
   object btnDarkMode: TButton
     Left = 32
-    Top = 237
+    Top = 206
     Width = 75
     Height = 25
     Caption = 'Dark Mode'
+    ParentShowHint = False
+    ShowHint = True
     TabOrder = 5
+    OnClick = btnDarkModeClick
   end
 end

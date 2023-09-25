@@ -24,6 +24,7 @@ type
     procedure btnSignInClick(Sender: TObject);
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure btnDarkModeClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -50,6 +51,8 @@ var
   arrChipsOor, arrKoeldrankOor, arrYsiesOor, arrGebakOor : array[1..iMAX] of Integer;
 
   iCount, iCount1, iCount2, iCount3, iCount4, iCount5, iCount6, iCount7 : Integer;
+  iCount44, iCount55, iCount66, iCount77 : Integer;
+
   sChipsName, sKoeldrankName, sGebakName, sYsiesName : string;
   iAantalChips, iAantalKoeldrank, iAantalYsies, iAantalGebak : Integer;
   rChipsKP, rKoeldrankKP, rYsiesKP, rGebakKP : Real;
@@ -67,6 +70,15 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmWelkom.btnDarkModeClick(Sender: TObject);
+begin
+
+//Next Day Feature
+
+  ShowMessage('Coming Soon...');
+
+end;
 
 procedure TfrmWelkom.btnSignInClick(Sender: TObject);
 begin

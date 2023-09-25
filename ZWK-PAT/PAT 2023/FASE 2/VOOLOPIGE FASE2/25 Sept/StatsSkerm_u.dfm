@@ -2,7 +2,7 @@ object frmStats: TfrmStats
   Left = 0
   Top = 0
   Caption = 'Stats'
-  ClientHeight = 441
+  ClientHeight = 438
   ClientWidth = 576
   Color = clMoneyGreen
   Font.Charset = DEFAULT_CHARSET
@@ -127,7 +127,7 @@ object frmStats: TfrmStats
     Caption = 'Water--Naartjie'
     TabOrder = 14
   end
-  object rbNMango: TRadioButton
+  object rbWMango: TRadioButton
     Left = 8
     Top = 291
     Width = 113
@@ -253,6 +253,7 @@ object frmStats: TfrmStats
     Caption = 'Vertoon Statistiek'
     TabOrder = 27
     WordWrap = True
+    OnClick = btnStatsShowClick
   end
   object pnlInkomstes: TPanel
     Left = 184
