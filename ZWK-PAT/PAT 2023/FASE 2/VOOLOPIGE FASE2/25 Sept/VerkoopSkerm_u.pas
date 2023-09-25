@@ -289,65 +289,78 @@ begin
 
   if iAantalChips > iChipsOor then
 
-    ShowMessage('Daar is meer ' + sChipsName + ' bestel as in vooraad. Daar is ' + IntToStr(iChipsOor) + ' in vooraad');
-    Exit;
+    begin
 
-  rChipsBedrag := rChipsBedrag + (rChipsVP * iAantalChips);
+      ShowMessage('Daar is meer ' + sChipsName + ' bestel as in vooraad. Daar is ' + IntToStr(iChipsOor) + ' in vooraad');
+      Exit;
 
-  pnlChipsKoste.caption := FloatToStrF(rChipsBedrag,ffCurrency,10,2);
-
-  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
-
-  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
-
-  //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag));
-  //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag, ffCurrency, 10, 2));
-
-
-
-   // Check if the other form is currently created
-
-  if iCount4 = 3 then
-
-    if Assigned(frmBetaal) then
-
-      begin
-
-       // Access the memo on the other form and add text to it
-       frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
-
-       end
-
-    else
-
-      begin
-
-         // Handle the case where the other form is not created
-         ShowMessage('The other form is not currently open or created.');
-
-      end
+    end
 
   else
 
-     if Assigned(frmBetaal) then
+    begin
 
-        begin
+      rChipsBedrag := rChipsBedrag + (rChipsVP * iAantalChips);
 
-          // Access the memo on the other form and add text to it
-          frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
+      pnlChipsKoste.caption := FloatToStrF(rChipsBedrag,ffCurrency,10,2);
 
-        end
+      rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
 
-     else
+      pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
-        begin
+      //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag));
+      //memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF(rChipsBedrag, ffCurrency, 10, 2));
 
-          // Handle the case where the other form is not created
-          ShowMessage('The other form is not currently open or created.');
 
-        end;
 
-  sedChips.clear;
+      // Check if the other form is currently created
+
+      if iCount4 = 3 then
+
+        if Assigned(frmBetaal) then
+
+         begin
+
+           // Access the memo on the other form and add text to it
+           frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
+
+           end
+
+        else
+
+         begin
+
+            // Handle the case where the other form is not created
+            ShowMessage('The other form is not currently open or created.');
+
+         end
+
+      else
+
+        if Assigned(frmBetaal) then
+
+            begin
+
+              // Access the memo on the other form and add text to it
+             frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
+
+           end
+
+         else
+
+           begin
+
+              // Handle the case where the other form is not created
+              ShowMessage('The other form is not currently open or created.');
+
+            end;
+
+     sedChips.clear;
+
+    end;
+
+
+
 
 end;
 
@@ -471,22 +484,10 @@ begin
 
   if iAantalGebak > iGebakOor then
 
-    ShowMessage('Daar is meer ' + sGebakName + ' bestel as in vooraad. Daar is ' + IntToStr(iGebakOor) + ' in vooraad');
-    Exit;
-
-  rGebakBedrag := rGebakBedrag + (rGebakVP * iAantalGebak);
-
-  pnlGebakKoste.caption := FloatToStrF(rGebakBedrag,ffCurrency,10,2);
-
-  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
-
-  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
-
-  if Assigned(frmBetaal) then
     begin
 
-     // Access the memo on the other form and add text to it
-      frmBetaal.memBetaal.Lines.Add(sGebakName + #9 + #9 + FloatToStrF(rGebakVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalGebak) + #9 + FloatToStrF((rGebakVP * iAantalGebak), ffCurrency, 10, 2));
+      ShowMessage('Daar is meer ' + sGebakName + ' bestel as in vooraad. Daar is ' + IntToStr(iGebakOor) + ' in vooraad');
+      Exit;
 
     end
 
@@ -494,12 +495,64 @@ begin
 
     begin
 
-     // Handle the case where the other form is not created
-     ShowMessage('The other form is not currently open or created.');
+      rGebakBedrag := rGebakBedrag + (rGebakVP * iAantalGebak);
+
+      pnlGebakKoste.caption := FloatToStrF(rGebakBedrag,ffCurrency,10,2);
+
+      rTOTBedrag := rGebakBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+      pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
+
+      //memBetaal.Lines.Add(sGebakName + #9 + FloatToStrF(rGebakVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalGebak) + #9 + FloatToStrF(rGebakBedrag));
+      //memBetaal.Lines.Add(sGebakName + #9 + FloatToStrF(rGebakVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalGebak) + #9 + FloatToStrF(rGebakBedrag, ffCurrency, 10, 2));
+
+
+
+      // Check if the other form is currently created
+
+      if iCount4 = 3 then
+
+        if Assigned(frmBetaal) then
+
+         begin
+
+           // Access the memo on the other form and add text to it
+           frmBetaal.memBetaal.Lines.Add(sGebakName + #9 + FloatToStrF(rGebakVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalGebak) + #9 + FloatToStrF((rGebakVP * iAantalGebak), ffCurrency, 10, 2));
+
+           end
+
+        else
+
+         begin
+
+            // Handle the case where the other form is not created
+            ShowMessage('The other form is not currently open or created.');
+
+         end
+
+      else
+
+        if Assigned(frmBetaal) then
+
+            begin
+
+              // Access the memo on the other form and add text to it
+             frmBetaal.memBetaal.Lines.Add(sGebakName + #9 + #9 + FloatToStrF(rGebakVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalGebak) + #9 + FloatToStrF((rGebakVP * iAantalGebak), ffCurrency, 10, 2));
+
+           end
+
+         else
+
+           begin
+
+              // Handle the case where the other form is not created
+              ShowMessage('The other form is not currently open or created.');
+
+            end;
+
+     sedGebak.clear;
 
     end;
-
-  sedGebak.Clear;
 
 end;
 
@@ -624,60 +677,75 @@ begin
 
   if iAantalKoeldrank > iKoeldrankOor then
 
-    ShowMessage('Daar is meer ' + sKoeldrankName + ' bestel as in vooraad. Daar is ' + IntToStr(iKoeldrankOor) + ' in vooraad');
-    Exit;
+    begin
 
+      ShowMessage('Daar is meer ' + sKoeldrankName + ' bestel as in vooraad. Daar is ' + IntToStr(iKoeldrankOor) + ' in vooraad');
+      Exit;
 
-
-  rKoeldrankBedrag := rKoeldrankBedrag + (rKoeldrankKP * iAantalKoeldrank);
-
-  pnlKoeldrankKoste.caption := FloatToStrF(rKoeldrankBedrag,ffCurrency,10,2);
-
-  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
-
-  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
-
-  if iCount5 = 4 then
-
-    if Assigned(frmBetaal) then
-
-      begin
-
-       // Access the memo on the other form and add text to it
-       frmBetaal.memBetaal.Lines.Add(sKoeldrankName + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
-
-       end
-
-    else
-
-      begin
-
-         // Handle the case where the other form is not created
-         ShowMessage('The other form is not currently open or created.');
-
-      end
+    end
 
   else
 
-     if Assigned(frmBetaal) then
+    begin
 
-        begin
+      rKoeldrankBedrag := rKoeldrankBedrag + (rKoeldrankVP * iAantalKoeldrank);
 
-          // Access the memo on the other form and add text to it
-          frmBetaal.memBetaal.Lines.Add(sKoeldrankName + #9 + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
+      pnlKoeldrankKoste.caption := FloatToStrF(rKoeldrankBedrag,ffCurrency,10,2);
 
-        end
+      rTOTBedrag := rKoeldrankBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
 
-     else
+      pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
-        begin
+      //memBetaal.Lines.Add(sKoeldrankName + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF(rKoeldrankBedrag));
+      //memBetaal.Lines.Add(sKoeldrankName + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF(rKoeldrankBedrag, ffCurrency, 10, 2));
 
-          // Handle the case where the other form is not created
-          ShowMessage('The other form is not currently open or created.');
 
-        end;
 
-  sedKoeldrank.Clear;
+      // Check if the other form is currently created
+
+      if iCount4 = 3 then
+
+        if Assigned(frmBetaal) then
+
+         begin
+
+           // Access the memo on the other form and add text to it
+           frmBetaal.memBetaal.Lines.Add(sKoeldrankName + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
+
+           end
+
+        else
+
+         begin
+
+            // Handle the case where the other form is not created
+            ShowMessage('The other form is not currently open or created.');
+
+         end
+
+      else
+
+        if Assigned(frmBetaal) then
+
+            begin
+
+              // Access the memo on the other form and add text to it
+             frmBetaal.memBetaal.Lines.Add(sKoeldrankName + #9 + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
+
+           end
+
+         else
+
+           begin
+
+              // Handle the case where the other form is not created
+              ShowMessage('The other form is not currently open or created.');
+
+            end;
+
+    end;
+
+     sedKoeldrank.clear;
 
 end;
 
@@ -799,22 +867,10 @@ begin
 
   if iAantalYsies > iYsiesOor then
 
-    ShowMessage('Daar is meer ' + sYsiesName + ' bestel as in vooraad. Daar is ' + IntToStr(iYsiesOor) + ' in vooraad');
-    Exit;
-
-  rYsiesBedrag := rYsiesBedrag + (rYsiesVP * iAantalYsies);
-
-  pnlYsiesKoste.caption := FloatToStrF(rYsiesBedrag,ffCurrency,10,2);
-
-  rTOTBedrag := rChipsBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
-
-  pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
-
-  if Assigned(frmBetaal) then
     begin
 
-     // Access the memo on the other form and add text to it
-      frmBetaal.memBetaal.Lines.Add(sYsiesName + #9 + FloatToStrF(rYsiesVP, ffCurrency, 10, 2) + ' ea.' + #9 + #9 + 'x' + IntToStr(iAantalYsies) + #9 + FloatToStrF((rYsiesVP * iAantalYsies), ffCurrency, 10, 2));
+      ShowMessage('Daar is meer ' + sYsiesName + ' bestel as in vooraad. Daar is ' + IntToStr(iYsiesOor) + ' in vooraad');
+      Exit;
 
     end
 
@@ -822,12 +878,64 @@ begin
 
     begin
 
-     // Handle the case where the other form is not created
-     ShowMessage('The other form is not currently open or created.');
+      rYsiesBedrag := rYsiesBedrag + (rYsiesVP * iAantalYsies);
+
+      pnlYsiesKoste.caption := FloatToStrF(rYsiesBedrag,ffCurrency,10,2);
+
+      rTOTBedrag := rYsiesBedrag + rKoeldrankBedrag + rGebakBedrag + rYsiesBedrag;
+
+      pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
+
+      //memBetaal.Lines.Add(sYsiesName + #9 + FloatToStrF(rYsiesVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalYsies) + #9 + FloatToStrF(rYsiesBedrag));
+      //memBetaal.Lines.Add(sYsiesName + #9 + FloatToStrF(rYsiesVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalYsies) + #9 + FloatToStrF(rYsiesBedrag, ffCurrency, 10, 2));
+
+
+
+      // Check if the other form is currently created
+
+      if iCount4 = 3 then
+
+        if Assigned(frmBetaal) then
+
+         begin
+
+           // Access the memo on the other form and add text to it
+           frmBetaal.memBetaal.Lines.Add(sYsiesName + #9 + FloatToStrF(rYsiesVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalYsies) + #9 + FloatToStrF((rYsiesVP * iAantalYsies), ffCurrency, 10, 2));
+
+           end
+
+        else
+
+         begin
+
+            // Handle the case where the other form is not created
+            ShowMessage('The other form is not currently open or created.');
+
+         end
+
+      else
+
+        if Assigned(frmBetaal) then
+
+            begin
+
+              // Access the memo on the other form and add text to it
+             frmBetaal.memBetaal.Lines.Add(sYsiesName + #9 + #9 + FloatToStrF(rYsiesVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalYsies) + #9 + FloatToStrF((rYsiesVP * iAantalYsies), ffCurrency, 10, 2));
+
+           end
+
+         else
+
+           begin
+
+              // Handle the case where the other form is not created
+              ShowMessage('The other form is not currently open or created.');
+
+            end;
+
+     sedYsies.clear;
 
     end;
-
-  sedYsies.Clear;
 
 end;
 
