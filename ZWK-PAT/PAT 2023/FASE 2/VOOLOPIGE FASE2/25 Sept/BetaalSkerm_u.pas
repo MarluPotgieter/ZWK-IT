@@ -25,6 +25,7 @@ type
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btnKaartClick(Sender: TObject);
+    procedure btnKontantClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -69,6 +70,30 @@ begin
 
   frmBetaal.Hide;
   frmVerkope.Show;
+
+end;
+
+procedure TfrmBetaal.btnKontantClick(Sender: TObject);
+begin
+
+  rKontant := StrToFloat(InputBox(' ','Tik aantal kontant in',' '));
+
+  rKleinGeld := rKontant - rTOTBedrag;
+
+  if rKleinGeld < 0 then
+    begin
+
+      ShowMessage('Kontant is te min');
+
+      rKontant := StrToFloat(InputBox(' ','Tik aantal kontant in',' '));
+
+      rKleinGeld := rKontant - rTOTBedrag;
+
+    end
+
+  else
+
+    ShowMessage('Kleingeld is: ' + FloatToStrF(rKleinGeld,ffCurrency,10,2));
 
 end;
 
@@ -128,7 +153,7 @@ begin
   memBetaal.Lines.Add(TimeToStr(Time));
   memBetaal.Lines.Add(DateToStr(Date));
   memBetaal.Lines.Add(' ');
- // memBetaal.Lines.Add('Produk Naam' + #9 + #9 + 'Prys Elk' + #9 + 'Aantal' + #9 + 'TotalePrys');
+  memBetaal.Lines.Add('Produk Naam' + #9 + 'Prys Elk' + #9 + #9 + 'Aantal' + #9 + 'TotalePrys');
   memBetaal.Lines.Add(' ');
 
 

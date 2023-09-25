@@ -113,7 +113,33 @@ procedure TfrmVerkope.FormActivate(Sender: TObject);
 
 begin
 
-  
+  sChipsName := ' ';
+  sKoeldrankName := ' ';
+  sGebakName := ' ';
+  sYsiesName := ' ';
+  iAantalChips := 0;
+  iAantalKoeldrank := 0;
+  iAantalYsies := 0;
+  iAantalGebak := 0;
+  rChipsKP := 0;
+  rKoeldrankKP := 0;
+  rYsiesKP := 0;
+  rGebakKP := 0;
+  rChipsVP := 0;
+  rKoeldrankVP := 0;
+  rYsiesVP := 0;
+  rGebakVP := 0;
+  iChipsOor := 0;
+  iKoeldrankOor := 0;
+  iYsiesOor := 0;
+  iGebakOor := 0;
+
+  rChipsBedrag := 0;
+  rKoeldrankBedrag := 0;
+  rYsiesBedrag := 0;
+  rGebakBedrag := 0;
+  rTOTBedrag := 0;
+
 
   if sUser = 'user' then
 
@@ -263,40 +289,42 @@ begin
   if iCount4 = 3 then
 
     if Assigned(frmBetaal) then
-    begin
 
-     // Access the memo on the other form and add text to it
-      frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
+      begin
 
-    end
+       // Access the memo on the other form and add text to it
+       frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
 
-       else
+       end
 
-    begin
+    else
 
-     // Handle the case where the other form is not created
-     ShowMessage('The other form is not currently open or created.');
+      begin
 
-    end
+         // Handle the case where the other form is not created
+         ShowMessage('The other form is not currently open or created.');
+
+      end
 
   else
 
      if Assigned(frmBetaal) then
-    begin
 
-     // Access the memo on the other form and add text to it
-      frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
+        begin
 
-    end
+          // Access the memo on the other form and add text to it
+          frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
 
-       else
+        end
 
-    begin
+     else
 
-     // Handle the case where the other form is not created
-     ShowMessage('The other form is not currently open or created.');
+        begin
 
-    end;
+          // Handle the case where the other form is not created
+          ShowMessage('The other form is not currently open or created.');
+
+        end;
 
   sedChips.clear;
 
@@ -570,22 +598,45 @@ begin
 
   pnlTOTBegrag.Caption := 'Totale bedrag: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2);
 
-  if Assigned(frmBetaal) then
-    begin
+  if iCount5 = 4 then
 
-     // Access the memo on the other form and add text to it
-      frmBetaal.memBetaal.Lines.Add(skoeldrankName + #9 + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
+    if Assigned(frmBetaal) then
 
-    end
+      begin
+
+       // Access the memo on the other form and add text to it
+       frmBetaal.memBetaal.Lines.Add(sKoeldrankName + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
+
+       end
+
+    else
+
+      begin
+
+         // Handle the case where the other form is not created
+         ShowMessage('The other form is not currently open or created.');
+
+      end
 
   else
 
-    begin
+     if Assigned(frmBetaal) then
 
-     // Handle the case where the other form is not created
-     ShowMessage('The other form is not currently open or created.');
+        begin
 
-    end;
+          // Access the memo on the other form and add text to it
+          frmBetaal.memBetaal.Lines.Add(sKoeldrankName + #9 + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
+
+        end
+
+     else
+
+        begin
+
+          // Handle the case where the other form is not created
+          ShowMessage('The other form is not currently open or created.');
+
+        end;
 
   sedKoeldrank.Clear;
 

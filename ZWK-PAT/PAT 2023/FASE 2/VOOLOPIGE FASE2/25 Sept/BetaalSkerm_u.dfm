@@ -2,7 +2,7 @@ object frmBetaal: TfrmBetaal
   Left = 0
   Top = 0
   Caption = 'Betaal'
-  ClientHeight = 438
+  ClientHeight = 508
   ClientWidth = 612
   Color = clMoneyGreen
   Font.Charset = DEFAULT_CHARSET
@@ -17,7 +17,7 @@ object frmBetaal: TfrmBetaal
     Left = 0
     Top = 8
     Width = 393
-    Height = 433
+    Height = 492
     Color = clActiveBorder
     TabOrder = 0
     WordWrap = False
@@ -48,6 +48,7 @@ object frmBetaal: TfrmBetaal
     Height = 25
     Caption = 'Kontant'
     TabOrder = 3
+    OnClick = btnKontantClick
   end
   object btnKlaar: TButton
     Left = 491
@@ -60,7 +61,7 @@ object frmBetaal: TfrmBetaal
   end
   object btnVerkope: TButton
     Left = 504
-    Top = 311
+    Top = 375
     Width = 75
     Height = 25
     Caption = 'Verkope'
@@ -69,7 +70,7 @@ object frmBetaal: TfrmBetaal
   end
   object btnWelkom: TButton
     Left = 504
-    Top = 280
+    Top = 344
     Width = 75
     Height = 25
     Caption = 'Welkom'
@@ -78,7 +79,7 @@ object frmBetaal: TfrmBetaal
   end
   object btnStats: TButton
     Left = 504
-    Top = 373
+    Top = 437
     Width = 75
     Height = 25
     Caption = 'Stats'
@@ -87,7 +88,7 @@ object frmBetaal: TfrmBetaal
   end
   object btnHelp: TButton
     Left = 504
-    Top = 342
+    Top = 406
     Width = 75
     Height = 25
     Caption = 'Hulp'
@@ -96,7 +97,7 @@ object frmBetaal: TfrmBetaal
   end
   object bmbClose: TBitBtn
     Left = 504
-    Top = 407
+    Top = 471
     Width = 75
     Height = 25
     Kind = bkClose

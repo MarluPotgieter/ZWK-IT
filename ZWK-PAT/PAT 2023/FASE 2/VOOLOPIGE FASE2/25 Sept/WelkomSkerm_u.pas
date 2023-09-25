@@ -1,4 +1,4 @@
-unit WelkomSkerm_u;
+﻿unit WelkomSkerm_u;
 
 interface
 
@@ -61,6 +61,8 @@ var
   rBTW, rSubtotal : Real;
 
   rChipsBedrag, rKoeldrankBedrag, rYsiesBedrag, rGebakBedrag, rTOTBedrag : Real;
+
+  rKontant, rKleinGeld : Real;
 
 implementation
 
@@ -125,6 +127,8 @@ end;
 
 procedure TfrmWelkom.FormCreate(Sender: TObject);
 begin
+
+  ShowMessage('Hierdie program is nie klaar nie, dit is ŉ bodge, die finaal sal beter');
 
 //##############################################################################
 
