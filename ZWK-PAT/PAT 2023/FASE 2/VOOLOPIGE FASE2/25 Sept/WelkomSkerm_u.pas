@@ -166,7 +166,7 @@ end;
 procedure TfrmWelkom.FormCreate(Sender: TObject);
 begin
 
-  ShowMessage('Hierdie program is nie klaar nie, dit is ŉ bodge, die finaal sal beter');
+
 
 //##############################################################################
 
