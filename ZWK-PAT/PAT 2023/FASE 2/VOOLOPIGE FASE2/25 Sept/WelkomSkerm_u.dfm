@@ -295,6 +295,7 @@ object frmWelkom: TfrmWelkom
     Height = 25
     Caption = 'Hulp'
     TabOrder = 3
+    OnClick = btnHelpClick
   end
   object bmbClose: TBitBtn
     Left = 32

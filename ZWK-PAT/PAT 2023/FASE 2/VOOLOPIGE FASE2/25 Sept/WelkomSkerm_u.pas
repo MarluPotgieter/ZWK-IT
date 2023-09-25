@@ -6,10 +6,10 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
   Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Mask, VerkoopSkerm_u, StatsSkerm_u,
-  BetaalSkerm_u, Vcl.Imaging.jpeg, Vcl.Buttons, Vcl.ComCtrls;
+  BetaalSkerm_u, Vcl.Imaging.jpeg, Vcl.Buttons, Vcl.ComCtrls, ShellAPI;
 
 const
-  iMAX = 5;
+  iMAX = 10;
   BTW = 15/100;
 
 type
@@ -25,6 +25,7 @@ type
     procedure FormActivate(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure btnDarkModeClick(Sender: TObject);
+    procedure btnHelpClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -67,6 +68,8 @@ var
 
   rKontant, rKleinGeld : Real;
 
+  WIKI : string;
+
 implementation
 
 {$R *.dfm}
@@ -77,6 +80,17 @@ begin
 //Next Day Feature
 
   ShowMessage('Coming Soon...');
+
+end;
+
+procedure TfrmWelkom.btnHelpClick(Sender: TObject);
+begin
+
+  // Set the URL you want to open in the web browser
+  WIKI := 'https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Main_Page';
+
+  // Use ShellExecute to open the URL in the default web browser
+  ShellExecute(0, 'open', PChar(WIKI), nil, nil, SW_SHOWNORMAL);
 
 end;
 

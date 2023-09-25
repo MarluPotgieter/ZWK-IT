@@ -4,10 +4,6 @@ Strokie Nommer: 1
  
 Produk Naam	Prys Elk		Aantal	TotalePrys
  
-Lays		R10,99 ea.	x0	R0,00
-Coke		R13,99 ea.	x0	R0,00
-Vanilla Ysie	R9,99 ea.		x0	R0,00
-Toastie		R25,99 ea.	x0	R0,00
 =========================================================================================================================================================================
  
 Sub-Totaal				R0,00

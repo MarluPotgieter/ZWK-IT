@@ -347,6 +347,7 @@ object frmVerkope: TfrmVerkope
     Height = 25
     Caption = 'Hulp'
     TabOrder = 35
+    OnClick = btnHulpClick
   end
   object bmbClose: TBitBtn
     Left = 622

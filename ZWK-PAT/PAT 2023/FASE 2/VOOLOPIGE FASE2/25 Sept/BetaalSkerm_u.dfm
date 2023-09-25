@@ -86,15 +86,6 @@ object frmBetaal: TfrmBetaal
     TabOrder = 7
     OnClick = btnStatsClick
   end
-  object btnHelp: TButton
-    Left = 504
-    Top = 406
-    Width = 75
-    Height = 25
-    Caption = 'Hulp'
-    TabOrder = 8
-    OnClick = btnStatsClick
-  end
   object bmbClose: TBitBtn
     Left = 504
     Top = 471
@@ -102,6 +93,15 @@ object frmBetaal: TfrmBetaal
     Height = 25
     Kind = bkClose
     NumGlyphs = 2
+    TabOrder = 8
+  end
+  object btnHelp: TButton
+    Left = 504
+    Top = 406
+    Width = 75
+    Height = 25
+    Caption = 'Help'
     TabOrder = 9
+    OnClick = btnHelpClick
   end
 end

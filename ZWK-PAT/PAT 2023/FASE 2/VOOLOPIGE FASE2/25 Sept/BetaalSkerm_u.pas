@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Buttons, ShellAPI;
 
 type
   TfrmBetaal = class(TForm)
@@ -16,8 +16,8 @@ type
     btnVerkope: TButton;
     btnWelkom: TButton;
     btnStats: TButton;
-    btnHelp: TButton;
     bmbClose: TBitBtn;
+    btnHelp: TButton;
     procedure btnWelkomClick(Sender: TObject);
     procedure btnVerkopeClick(Sender: TObject);
     procedure btnStatsClick(Sender: TObject);
@@ -26,6 +26,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure btnKaartClick(Sender: TObject);
     procedure btnKontantClick(Sender: TObject);
+    procedure btnHelpClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -47,6 +48,17 @@ implementation
 
 Uses
   WelkomSkerm_u, StatsSkerm_u, VerkoopSkerm_u;
+
+procedure TfrmBetaal.btnHelpClick(Sender: TObject);
+begin
+
+  // Set the URL you want to open in the web browser
+  WIKI := 'https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Main_Page';
+
+  // Use ShellExecute to open the URL in the default web browser
+  ShellExecute(0, 'open', PChar(WIKI), nil, nil, SW_SHOWNORMAL);
+
+end;
 
 procedure TfrmBetaal.btnKaartClick(Sender: TObject);
 begin

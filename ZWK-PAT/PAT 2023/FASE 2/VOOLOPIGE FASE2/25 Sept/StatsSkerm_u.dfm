@@ -10,6 +10,7 @@ object frmStats: TfrmStats
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
+  OnActivate = FormActivate
   TextHeight = 15
   object rgChips: TRadioGroup
     Left = 0
@@ -301,6 +302,7 @@ object frmStats: TfrmStats
     Height = 25
     Caption = 'Hulp'
     TabOrder = 32
+    OnClick = btnHelpClick
   end
   object bmbClose: TBitBtn
     Left = 493

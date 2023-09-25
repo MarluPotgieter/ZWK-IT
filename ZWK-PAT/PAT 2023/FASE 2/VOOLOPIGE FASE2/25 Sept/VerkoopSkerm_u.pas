@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Samples.Spin,
-  Vcl.Buttons, Vcl.ComCtrls;
+  Vcl.Buttons, Vcl.ComCtrls, ShellAPI;
 
 
 
@@ -57,6 +57,7 @@ type
     procedure pnlKeldrankBestelClick(Sender: TObject);
     procedure pnlYsiesBestelClick(Sender: TObject);
     procedure pnlGebakBestelClick(Sender: TObject);
+    procedure btnHulpClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -85,6 +86,17 @@ begin
   frmVerkope.Hide;
   frmBetaal.Show;
 
+
+end;
+
+procedure TfrmVerkope.btnHulpClick(Sender: TObject);
+begin
+
+  // Set the URL you want to open in the web browser
+  WIKI := 'https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Main_Page';
+
+  // Use ShellExecute to open the URL in the default web browser
+  ShellExecute(0, 'open', PChar(WIKI), nil, nil, SW_SHOWNORMAL);
 
 end;
 

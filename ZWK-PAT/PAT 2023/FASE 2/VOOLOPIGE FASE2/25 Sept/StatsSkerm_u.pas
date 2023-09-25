@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Mask,
-  Vcl.Buttons;
+  Vcl.Buttons, ShellAPI;
 
 type
   TfrmStats = class(TForm)
@@ -47,6 +47,8 @@ type
     procedure btnBetaalClick(Sender: TObject);
     procedure btnVerkopeClick(Sender: TObject);
     procedure btnStatsShowClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure btnHelpClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -70,6 +72,17 @@ begin
 
   frmStats.Hide;
   frmBetaal.show;
+
+end;
+
+procedure TfrmStats.btnHelpClick(Sender: TObject);
+begin
+
+  // Set the URL you want to open in the web browser
+  WIKI := 'https://docwiki.embarcadero.com/RADStudio/Alexandria/en/Main_Page';
+
+  // Use ShellExecute to open the URL in the default web browser
+  ShellExecute(0, 'open', PChar(WIKI), nil, nil, SW_SHOWNORMAL);
 
 end;
 
@@ -571,6 +584,16 @@ begin
 
   frmStats.Hide;
   frmWelkom.show;
+
+end;
+
+procedure TfrmStats.FormActivate(Sender: TObject);
+begin
+
+  iCount44 := 0;
+  iCount55 := 0;
+  iCount66 := 0;
+  iCount77 := 0;
 
 end;
 
