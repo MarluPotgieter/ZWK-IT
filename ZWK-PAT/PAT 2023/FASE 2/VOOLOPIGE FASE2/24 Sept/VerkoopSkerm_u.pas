@@ -26,7 +26,7 @@ type
     rbMVanilla: TRadioButton;
     rbMStrawberry: TRadioButton;
     rbWNaartjie: TRadioButton;
-    rbNMango: TRadioButton;
+    rbWMango: TRadioButton;
     rbMuffin: TRadioButton;
     rbToastie: TRadioButton;
     rbCookie: TRadioButton;
@@ -130,7 +130,7 @@ procedure TfrmVerkope.pnlCHipsBestelClick(Sender: TObject);
 
 begin
 
-  iAantalChips := sedChips.Value;
+
 
   if rbLays.checked = True then
 
@@ -194,124 +194,7 @@ begin
      Exit;
   end;
 
-//##############################################################################
-
-  
-
-//##############################################################################
-
-  AssignFile(txYsiesName,'YsiesName.txt');
-
-  try
-    Reset(txYsiesName);
-  except
-    ShowMessage('YsiesName.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txYsiesKP,'YsiesKP.txt');
-
-  try
-    Reset(txYsiesKP);
-  except
-    ShowMessage('YsiesKP.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txYsiesVP,'YsiesVP.txt');
-
-  try
-    Reset(txYsiesVP);
-  except
-    ShowMessage('YsiesVP.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txYsiesOor,'YsiesOor.txt');
-
-  try
-    Reset(txYsiesOor);
-  except
-    ShowMessage('YsiesOor.txt does not exist');
-    Exit;
-  end;
-
-//##############################################################################
-
-  AssignFile(txGebakName,'GebakName.txt');
-
-  try
-    Reset(txGebakName);
-  except
-    ShowMessage('GebakName.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txGebakKP,'GebakKP.txt');
-
-  try
-    Reset(txGebakKP);
-  except
-    ShowMessage('GebakKP.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txGebakVP,'GebakVP.txt');
-
-  try
-    Reset(txGebakVP);
-  except
-    ShowMessage('GebakVP.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txGebakOor,'GebakOor.txt');
-
-  try
-    Reset(txGebakOor);
-  except
-    ShowMessage('GebakOor.txt does not exist');
-    Exit;
-  end;
-
-//##############################################################################
-
-  AssignFile(txUser,'Usernames.txt');
-
-  try
-    Reset(txUser);
-  except
-    ShowMessage('Usernames.txt does not exist');
-    Exit;
-  end;
-
-
-
-  AssignFile(txPWord,'Passwords.txt');
-
-  try
-    Reset(txPWord);
-  except
-    ShowMessage('Passwords.txt does not exist');
-    Exit;
-  end;
-
-//##############################################################################
-
-
-  
+//******************************************************************************
 
   iCount := 0;
   while not Eof(txChipsName) and (iCount < 4) do
@@ -357,105 +240,84 @@ begin
 
     end;
 
-    iAantalChips := arrChipsOor[iCount4];
-
-//******************************************************************************
-
-   iCount := 0;
-  while not Eof(txKoeldrankName) and (iCount < 4) do
-    begin
-      Inc(iCount);
-      Readln(txKoeldrankName,arrKoeldrankName[iCount]);
-
-    end;
-
-    sKoeldrankName := arrKoeldrankName[iCount4];
+    iChipsOor := arrChipsOor[iCount4];
 
 //------------------------------------------------------------------------------
 
-    iCount := 0;
-  while not Eof(txKoeldrankKP) and (iCount < 4) do
-    begin
-      Inc(iCount);
-      Readln(txKoeldrankKP,arrKoeldrankKP[iCount]);
+  iAantalChips := sedChips.Value;
 
-    end;
 
-    rKoeldrankKP := arrKoeldrankKP[iCount4];
 
-//------------------------------------------------------------------------------
+  pnlChipsKoste.caption := FloatToStrF((rChipsVP * iAantalChips),ffCurrency,10,2);
 
-    iCount := 0;
-  while not Eof(txKoeldrankVP) and (iCount < 4) do
-    begin
-      Inc(iCount);
-      Readln(txKoeldrankVP,arrKoeldrankVP[iCount]);
 
-    end;
+  sedChips.clear;
 
-    rKoeldrankVP := arrKoeldrankVP[iCount4];
+end;
 
-//------------------------------------------------------------------------------
+procedure TfrmVerkope.pnlGebakBestelClick(Sender: TObject);
 
-    iCount := 0;
-  while not Eof(txKoeldrankOor) and (iCount < 4) do
-    begin
-      Inc(iCount);
-      Readln(txKoeldrankOor,arrKoeldrankOor[iCount]);
+begin
 
-    end;
+  if rbToastie.checked = True then
 
-    iAantalKoeldrank := arrKoeldrankOor[iCount4];
+      iCount7 := 1;
 
-//******************************************************************************
+  if rbMuffin.checked = True then
 
-  iCount := 0;
-  while not Eof(txYsiesName) and (iCount < 4) do
-    begin
-      Inc(iCount);
-      Readln(txYsiesName,arrYsiesName[iCount]);
+      iCount7 := 2;
 
-    end;
+  if rbCookie.checked = True then
 
-    sYsiesName := arrYsiesName[iCount4];
+      iCount7 := 3;
 
-//------------------------------------------------------------------------------
+  if rbQuiche.checked = True then
 
-    iCount := 0;
-  while not Eof(txYsiesKP) and (iCount < 4) do
-    begin
-      Inc(iCount);
-      Readln(txYsiesKP,arrYsiesKP[iCount]);
+      iCount7 := 4;
 
-    end;
+  AssignFile(txGebakName,'GebakName.txt');
 
-    rYsiesKP := arrYsiesKP[iCount4];
+  try
+    Reset(txGebakName);
+  except
+    ShowMessage('GebakName.txt does not exist');
+    Exit;
+  end;
 
-//------------------------------------------------------------------------------
 
-    iCount := 0;
-  while not Eof(txYsiesVP) and (iCount < 4) do
-    begin
-      Inc(iCount);
-      Readln(txYsiesVP,arrYsiesVP[iCount]);
 
-    end;
+  AssignFile(txGebakKP,'GebakKP.txt');
 
-    rYsiesVP := arrYsiesVP[iCount4];
+  try
+    Reset(txGebakKP);
+  except
+    ShowMessage('GebakKP.txt does not exist');
+    Exit;
+  end;
 
-//------------------------------------------------------------------------------
 
-    iCount := 0;
-  while not Eof(txYsiesOor) and (iCount < 4) do
-    begin
-      Inc(iCount);
-      Readln(txYsiesOor,arrYsiesOor[iCount]);
 
-    end;
+  AssignFile(txGebakVP,'GebakVP.txt');
 
-    iAantalYsies := arrYsiesOor[iCount4];
+  try
+    Reset(txGebakVP);
+  except
+    ShowMessage('GebakVP.txt does not exist');
+    Exit;
+  end;
 
-//******************************************************************************
+
+
+  AssignFile(txGebakOor,'GebakOor.txt');
+
+  try
+    Reset(txGebakOor);
+  except
+    ShowMessage('GebakOor.txt does not exist');
+    Exit;
+  end;
+
+//##############################################################################
 
   iCount := 0;
    while not Eof(txGebakName) and (iCount < 4) do
@@ -465,7 +327,19 @@ begin
 
      end;
 
-     sGebak := arrGebakName[iCount4];
+     sGebakName := arrGebakName[iCount7];
+
+//------------------------------------------------------------------------------
+
+     iCount := 0;
+   while not Eof(txGebakVP) and (iCount < 4) do
+     begin
+       Inc(iCount);
+       Readln(txGebakVP,arrGebakVP[iCount]);
+
+     end;
+
+     rGebakVP := arrGebakVP[iCount7];
 
 //------------------------------------------------------------------------------
 
@@ -477,19 +351,7 @@ begin
 
      end;
 
-     rGebakKP := arrGebakKP[iCount4];
-
-//------------------------------------------------------------------------------
-
-     iCount := 0;
-   while not Eof(txYsiesVP) and (iCount < 4) do
-     begin
-       Inc(iCount);
-       Readln(txYsiesVP,arrYsiesVP[iCount]);
-
-     end;
-
-     rYsiesVP := arrYsiesVP[iCount4];
+     rGebakKP := arrGebakKP[iCount7];
 
 //------------------------------------------------------------------------------
 
@@ -501,23 +363,15 @@ begin
 
      end;
 
-     iGebakOor := arrYsiesOor[iCount4];
+     iGebakOor := arrGebakOor[iCount7];
 
-//##############################################################################
+//------------------------------------------------------------------------------
 
-  pnlChipsKoste.caption := FloatToStrF(rChipsBedrag,ffCurrency,10,2);
 
-  sedChips.clear;
-
-end;
-
-procedure TfrmVerkope.pnlGebakBestelClick(Sender: TObject);
-
-begin
 
   iAantalGebak := sedGebak.Value;
 
-  pnlGebakKoste.caption := FloatToStrF(rGebakBedrag,ffCurrency,10,2);
+  pnlGebakKoste.caption := FloatToStrF((rGebakVP * iAantalGebak),ffCurrency,10,2);
 
   sedGebak.Clear;
 
@@ -526,6 +380,23 @@ end;
 procedure TfrmVerkope.pnlKeldrankBestelClick(Sender: TObject);
 
 begin
+
+  if rbCoke.checked = True then
+
+      iCount5 := 1;
+
+  if rbFanta.checked = True then
+
+      iCount5 := 2;
+
+  if rbSprite.checked = True then
+
+      iCount5 := 3;
+
+  if rbCreamSoda.checked = True then
+
+      iCount5 := 4;
+
 
   AssignFile(txKoeldrankName,'KoeldrankName.txt');
 
@@ -569,10 +440,62 @@ begin
     Exit;
   end;
 
+//******************************************************************************
+
+   iCount := 0;
+  while not Eof(txKoeldrankName) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankName,arrKoeldrankName[iCount]);
+
+    end;
+
+    sKoeldrankName := arrKoeldrankName[iCount5];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txKoeldrankKP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankKP,arrKoeldrankKP[iCount]);
+
+    end;
+
+    rKoeldrankKP := arrKoeldrankKP[iCount5];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txKoeldrankVP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankVP,arrKoeldrankVP[iCount]);
+
+    end;
+
+    rKoeldrankVP := arrKoeldrankVP[iCount5];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txKoeldrankOor) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txKoeldrankOor,arrKoeldrankOor[iCount]);
+
+    end;
+
+    iKoeldrankOor := arrKoeldrankOor[iCount5];
+
+//------------------------------------------------------------------------------
 
   iAantalKoeldrank := sedKoeldrank.Value;
 
-  pnlKoeldrankKoste.caption := FloatToStrF(rKoeldrankBedrag,ffCurrency,10,2);
+  rKoeldrankBedrag := rKoeldrankBedrag + (rKoeldrankKP * iAantalKoeldrank);
+
+  pnlKoeldrankKoste.caption := FloatToStrF((rKoeldrankKP * iAantalKoeldrank),ffCurrency,10,2);
+
 
   sedKoeldrank.Clear;
 
@@ -582,12 +505,122 @@ procedure TfrmVerkope.pnlYsiesBestelClick(Sender: TObject);
 
 begin
 
+  if rbMVanilla.checked = True then
+
+      iCount6 := 1;
+
+  if rbMStrawberry.checked = True then
+
+      iCount6 := 2;
+
+  if rbWNaartjie.checked = True then
+
+      iCount6 := 3;
+
+  if rbWMango.checked = True then
+
+      iCount6 := 4;
+
+  AssignFile(txYsiesName,'YsiesName.txt');
+
+  try
+    Reset(txYsiesName);
+  except
+    ShowMessage('YsiesName.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txYsiesKP,'YsiesKP.txt');
+
+  try
+    Reset(txYsiesKP);
+  except
+    ShowMessage('YsiesKP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txYsiesVP,'YsiesVP.txt');
+
+  try
+    Reset(txYsiesVP);
+  except
+    ShowMessage('YsiesVP.txt does not exist');
+    Exit;
+  end;
+
+
+
+  AssignFile(txYsiesOor,'YsiesOor.txt');
+
+  try
+    Reset(txYsiesOor);
+  except
+    ShowMessage('YsiesOor.txt does not exist');
+    Exit;
+  end;
+
+  iCount := 0;
+  while not Eof(txYsiesName) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesName,arrYsiesName[iCount]);
+
+    end;
+
+    sYsiesName := arrYsiesName[iCount6];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txYsiesKP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesKP,arrYsiesKP[iCount]);
+
+    end;
+
+    rYsiesKP := arrYsiesKP[iCount6];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txYsiesVP) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesVP,arrYsiesVP[iCount]);
+
+    end;
+
+    rYsiesVP := arrYsiesVP[iCount6];
+
+//------------------------------------------------------------------------------
+
+    iCount := 0;
+  while not Eof(txYsiesOor) and (iCount < 4) do
+    begin
+      Inc(iCount);
+      Readln(txYsiesOor,arrYsiesOor[iCount]);
+
+    end;
+
+    iYsiesOor := arrYsiesOor[iCount6];
+
+//------------------------------------------------------------------------------
+
   iAantalYsies := sedYsies.Value;
 
-  pnlYsiesKoste.caption := FloatToStrF(rYsiesBedrag,ffCurrency,10,2);
+  iAantalYsies := sedYsies.Value;
+
+  pnlYsiesKoste.caption := FloatToStrF((rYsiesVP * iAantalYsies),ffCurrency,10,2);
+
 
   sedYsies.Clear;
 
 end;
 
 end.
+

@@ -51,6 +51,7 @@ begin
   memBetaal.Lines.SaveToFile('Strokie_' + IntToStr(iStrokieNr) + '.txt' );
   memBetaal.Clear;
   iStrokieNr := iStrokieNr + 1;
+  memBetaal.Lines.Add(' ');
 
   frmBetaal.Hide;
   frmVerkope.Show;

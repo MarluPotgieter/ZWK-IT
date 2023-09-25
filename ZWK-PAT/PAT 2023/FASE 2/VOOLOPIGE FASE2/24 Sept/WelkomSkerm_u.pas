@@ -49,7 +49,7 @@ var
   arrChipsOor, arrKoeldrankOor, arrYsiesOor, arrGebakOor : array[1..iMAX] of Integer;
 
   iCount, iCount1, iCount2, iCount3, iCount4, iCount5, iCount6, iCount7 : Integer;
-  sChipsName, sKoeldrankName, sGebakName
+  sChipsName, sKoeldrankName, sGebakName, sYsiesName : string;
   iAantalChips, iAantalKoeldrank, iAantalYsies, iAantalGebak : Integer;
   rChipsKP, rKoeldrankKP, rYsiesKP, rGebakKP : Real;
   rChipsVP, rKoeldrankVP, rYsiesVP, rGebakVP : Real;

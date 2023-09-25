@@ -128,7 +128,7 @@ object frmVerkope: TfrmVerkope
     Caption = 'Water--Naartjie'
     TabOrder = 14
   end
-  object rbNMango: TRadioButton
+  object rbWMango: TRadioButton
     Left = 8
     Top = 291
     Width = 113
@@ -262,7 +262,7 @@ object frmVerkope: TfrmVerkope
   end
   object pnlGebakBestel: TPanel
     Left = 271
-    Top = 333
+    Top = 327
     Width = 185
     Height = 86
     Caption = 'Voeg By'
@@ -306,7 +306,7 @@ object frmVerkope: TfrmVerkope
   end
   object pnlGebakKoste: TPanel
     Left = 456
-    Top = 333
+    Top = 327
     Width = 153
     Height = 86
     Color = clActiveBorder
