@@ -114,9 +114,9 @@ begin
   memBetaal.Lines.Add('=========================================================================================================================================================================');
   memBetaal.Lines.Add(' ');
 
-  memBetaal.Lines.Add('Sub-Totaal' + #9 + #9 + #9 + FloatToStrF(rSubtotal,ffCurrency,10,2));
-  memBetaal.Lines.Add('BTW' +#9 + #9 + #9 + #9 + FloatToStrF(rBTW,ffCurrency,10,2));
-  memBetaal.Lines.Add('Totaal' + #9 + #9 + #9 + #9 + FloatToStrF(rTOTBedrag,ffCurrency,10,2));
+  memBetaal.Lines.Add('Sub-Totaal' + #9 + #9 + #9 + #9 + FloatToStrF(rSubtotal,ffCurrency,10,2));
+  memBetaal.Lines.Add('BTW' + #9 + #9 + #9 + #9 + #9 + FloatToStrF(rBTW,ffCurrency,10,2));
+  memBetaal.Lines.Add('Totaal' + #9 + #9 + #9 + #9 + #9 + FloatToStrF(rTOTBedrag,ffCurrency,10,2));
 
 end;
 

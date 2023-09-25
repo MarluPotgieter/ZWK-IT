@@ -259,7 +259,10 @@ begin
 
 
    // Check if the other form is currently created
-  if Assigned(frmBetaal) then
+
+  if iCount4 = 3 then
+
+    if Assigned(frmBetaal) then
     begin
 
      // Access the memo on the other form and add text to it
@@ -267,7 +270,26 @@ begin
 
     end
 
+       else
+
+    begin
+
+     // Handle the case where the other form is not created
+     ShowMessage('The other form is not currently open or created.');
+
+    end
+
   else
+
+     if Assigned(frmBetaal) then
+    begin
+
+     // Access the memo on the other form and add text to it
+      frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
+
+    end
+
+       else
 
     begin
 
@@ -408,7 +430,7 @@ begin
     begin
 
      // Access the memo on the other form and add text to it
-      frmBetaal.memBetaal.Lines.Add(sGebakName + #9 + FloatToStrF(rGebakVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalGebak) + #9 + FloatToStrF((rGebakVP * iAantalGebak), ffCurrency, 10, 2));
+      frmBetaal.memBetaal.Lines.Add(sGebakName + #9 + #9 + FloatToStrF(rGebakVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalGebak) + #9 + FloatToStrF((rGebakVP * iAantalGebak), ffCurrency, 10, 2));
 
     end
 
@@ -552,7 +574,7 @@ begin
     begin
 
      // Access the memo on the other form and add text to it
-      frmBetaal.memBetaal.Lines.Add(skoeldrankName + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
+      frmBetaal.memBetaal.Lines.Add(skoeldrankName + #9 + #9 + FloatToStrF(rKoeldrankVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalKoeldrank) + #9 + FloatToStrF((rKoeldrankVP * iAantalKoeldrank), ffCurrency, 10, 2));
 
     end
 
@@ -693,7 +715,7 @@ begin
     begin
 
      // Access the memo on the other form and add text to it
-      frmBetaal.memBetaal.Lines.Add(sYsiesName + #9 + FloatToStrF(rYsiesVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalYsies) + #9 + FloatToStrF((rYsiesVP * iAantalYsies), ffCurrency, 10, 2));
+      frmBetaal.memBetaal.Lines.Add(sYsiesName + #9 + FloatToStrF(rYsiesVP, ffCurrency, 10, 2) + ' ea.' + #9 + #9 + 'x' + IntToStr(iAantalYsies) + #9 + FloatToStrF((rYsiesVP * iAantalYsies), ffCurrency, 10, 2));
 
     end
 
