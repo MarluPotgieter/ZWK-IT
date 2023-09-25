@@ -101,33 +101,53 @@ begin
   sPWordU := ledPassWord.Text;
 
 
-  if (sUserN = 'admin') and (sPWordU = 'admin123#') then
+  if sUserN.Length > 0 then
 
-      begin
-        sUser := 'admin';
+    Begin
 
-        frmWelkom.Hide;
-        frmVerkope.Show;
-      end
+      if sPWordU.Length > 0 then
+
+        begin
+
+          if (sUserN = 'admin') and (sPWordU = 'admin123#') then
+
+            begin
+              sUser := 'admin';
+
+              frmWelkom.Hide;
+              frmVerkope.Show;
+            end
+
+          else
+
+            if (sUserN = 'user') and (sPWordU = 'user123#') then
+
+              begin
+                sUser := 'user';
+
+                frmWelkom.Hide;
+                frmVerkope.Show;
+              end
+
+            else
+
+              begin
+               ShowMessage('Username or password not valid');
+               frmWelkom.Show;
+               frmVerkope.hide;
+              end;
+
+        end
+
+      else
+
+      ShowMessage('Enter a password');
+
+    End
 
   else
 
-   if (sUserN = 'user') and (sPWordU = 'user123#') then
-
-         begin
-           sUser := 'user';
-
-           frmWelkom.Hide;
-           frmVerkope.Show;
-         end
-
-   else
-
-          begin
-            ShowMessage('Enter a username and password');
-            frmWelkom.Show;
-            frmVerkope.hide;
-          end;
+    ShowMessage('Enter a username');
 
 
 
