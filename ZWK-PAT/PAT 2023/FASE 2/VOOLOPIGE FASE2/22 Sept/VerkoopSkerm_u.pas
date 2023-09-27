@@ -465,7 +465,7 @@ begin
 
      end;
 
-     sGebak := arrGebakName[iCount4];
+     sGebakName := arrGebakName[iCount4];
 
 //------------------------------------------------------------------------------
 
