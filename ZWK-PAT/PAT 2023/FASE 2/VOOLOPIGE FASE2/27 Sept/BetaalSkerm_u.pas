@@ -18,6 +18,8 @@ type
     btnStats: TButton;
     bmbClose: TBitBtn;
     btnHelp: TButton;
+    dlgPnt1: TPrintDialog;
+    btnPrint: TButton;
     procedure btnWelkomClick(Sender: TObject);
     procedure btnVerkopeClick(Sender: TObject);
     procedure btnStatsClick(Sender: TObject);
@@ -27,6 +29,7 @@ type
     procedure btnKaartClick(Sender: TObject);
     procedure btnKontantClick(Sender: TObject);
     procedure btnHelpClick(Sender: TObject);
+    procedure btnPrintClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -110,7 +113,12 @@ begin
 
 end;
 
-procedure TfrmBetaal.btnStatsClick(Sender: TObject);
+pprocedure TfrmBetaal.btnPrintClick(Sender: TObject);
+begin
+
+end;
+
+rocedure TfrmBetaal.btnStatsClick(Sender: TObject);
 begin
 
   frmBetaal.Hide;

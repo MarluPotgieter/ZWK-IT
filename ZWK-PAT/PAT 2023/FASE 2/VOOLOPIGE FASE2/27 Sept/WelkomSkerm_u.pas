@@ -6,7 +6,8 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
   System.Classes, Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs,
   Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.Mask, VerkoopSkerm_u, StatsSkerm_u,
-  BetaalSkerm_u, Vcl.Imaging.jpeg, Vcl.Buttons, Vcl.ComCtrls, ShellAPI;
+  BetaalSkerm_u, Vcl.Imaging.jpeg, Vcl.Buttons, Vcl.ComCtrls, ShellAPI,
+  Vcl.OleCtrls, SHDocVw;
 
 const
   iMAX = 10;
@@ -80,6 +81,8 @@ begin
 //Next Day Feature
 
   ShowMessage('Coming Soon...');
+
+
 
 end;
 

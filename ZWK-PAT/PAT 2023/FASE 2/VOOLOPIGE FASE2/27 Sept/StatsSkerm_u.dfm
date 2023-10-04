@@ -234,14 +234,14 @@ object frmStats: TfrmStats
     TabOrder = 25
     Text = ''
   end
-  object ledAantaVerkoop: TLabeledEdit
+  object ledAantalOor: TLabeledEdit
     Left = 184
     Top = 219
     Width = 121
     Height = 23
-    EditLabel.Width = 80
+    EditLabel.Width = 57
     EditLabel.Height = 15
-    EditLabel.Caption = 'Aantal Verkoop'
+    EditLabel.Caption = 'Aantal Oor'
     ReadOnly = True
     TabOrder = 26
     Text = ''

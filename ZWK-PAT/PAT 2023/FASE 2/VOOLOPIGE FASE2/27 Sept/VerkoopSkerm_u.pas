@@ -312,43 +312,51 @@ begin
 
       if iCount4 = 3 then     //Verander die spasie tussen produkte op die strokie sodat hulle in lyn is
 
-        if Assigned(frmBetaal) then
+        Begin
 
-         begin
+          if Assigned(frmBetaal) then
 
-           // Gebruik die memo op frmBetaal om produkte by te voeg
-           frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
+             begin
 
-           end
+              // Gebruik die memo op frmBetaal om produkte by te voeg
+              frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
 
-        else
+              end
 
-         begin
-
-            // Hanteer die geval waar die form nie bestaan nie
-            ShowMessage('The other form is not currently open or created.');
-
-         end
-
-      else
-
-        if Assigned(frmBetaal) then
+          else
 
             begin
 
-              // Gebruik die memo op frmBetaal om produkte by te voeg
-             frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
+                // Hanteer die geval waar die form nie bestaan nie
+               ShowMessage('The other form is not currently open or created.');
 
-           end
+            end
 
-         else
+        End
 
-           begin
+      else
 
-              // Hanteer die geval waar die form nie bestaan nie
-              ShowMessage('The other form is not currently open or created.');
+        begin
 
-            end;
+          if Assigned(frmBetaal) then
+
+              begin
+
+                // Gebruik die memo op frmBetaal om produkte by te voeg
+               frmBetaal.memBetaal.Lines.Add(sChipsName + #9 + #9 + FloatToStrF(rChipsVP, ffCurrency, 10, 2) + ' ea.' + #9 + 'x' + IntToStr(iAantalChips) + #9 + FloatToStrF((rChipsVP * iAantalChips), ffCurrency, 10, 2));
+
+             end
+
+          else
+
+             begin
+
+               // Hanteer die geval waar die form nie bestaan nie
+               ShowMessage('The other form is not currently open or created.');
+
+             end
+
+        end;
 
      sedChips.clear;
 

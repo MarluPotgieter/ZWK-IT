@@ -15,8 +15,8 @@ object frmWelkom: TfrmWelkom
   OnCreate = FormCreate
   TextHeight = 15
   object imgLogo: TImage
-    Left = -8
-    Top = -16
+    Left = -24
+    Top = -32
     Width = 633
     Height = 457
     Picture.Data = {
@@ -302,7 +302,8 @@ object frmWelkom: TfrmWelkom
     Top = 237
     Width = 75
     Height = 25
-    Kind = bkClose
+    Caption = '&Close'
+    Kind = bkIgnore
     NumGlyphs = 2
     TabOrder = 4
   end

@@ -104,4 +104,18 @@ object frmBetaal: TfrmBetaal
     TabOrder = 9
     OnClick = btnHelpClick
   end
+  object btnPrint: TButton
+    Left = 491
+    Top = 150
+    Width = 88
+    Height = 25
+    Caption = 'btnPrint'
+    TabOrder = 10
+    OnClick = btnPrintClick
+  end
+  object dlgPnt1: TPrintDialog
+    Copies = 1
+    Left = 400
+    Top = 176
+  end
 end
