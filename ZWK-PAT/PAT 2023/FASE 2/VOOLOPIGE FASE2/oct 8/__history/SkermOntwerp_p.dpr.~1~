@@ -7,7 +7,6 @@ uses
   StatsSkerm_u in 'StatsSkerm_u.pas' {frmStats};
 
 {$R *.res}
-
 begin
   Application.Initialize;
   Application.MainFormOnTaskbar := True;

@@ -299,7 +299,7 @@ object frmWelkom: TfrmWelkom
   end
   object bmbClose: TBitBtn
     Left = 32
-    Top = 269
+    Top = 237
     Width = 75
     Height = 25
     Kind = bkClose
@@ -316,16 +316,5 @@ object frmWelkom: TfrmWelkom
     ShowHint = True
     TabOrder = 5
     OnClick = btnDarkModeClick
-  end
-  object btnClear: TBitBtn
-    Left = 32
-    Top = 237
-    Width = 75
-    Height = 25
-    Caption = '&Clear'
-    Kind = bkRetry
-    NumGlyphs = 2
-    TabOrder = 6
-    OnClick = btnClearClick
   end
 end
