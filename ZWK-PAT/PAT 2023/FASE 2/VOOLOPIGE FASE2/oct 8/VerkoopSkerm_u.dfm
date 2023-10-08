@@ -369,4 +369,48 @@ object frmVerkope: TfrmVerkope
     ParentBackground = False
     TabOrder = 37
   end
+  object btnChipsClear: TBitBtn
+    Left = 144
+    Top = 38
+    Width = 75
+    Height = 25
+    Caption = '&Clear'
+    Kind = bkRetry
+    NumGlyphs = 2
+    TabOrder = 38
+    OnClick = btnChipsClearClick
+  end
+  object btnKoeldrankClear: TBitBtn
+    Left = 144
+    Top = 147
+    Width = 75
+    Height = 25
+    Caption = '&Clear'
+    Kind = bkRetry
+    NumGlyphs = 2
+    TabOrder = 39
+    OnClick = btnKoeldrankClearClick
+  end
+  object btnYsiesClear: TBitBtn
+    Left = 144
+    Top = 252
+    Width = 75
+    Height = 25
+    Caption = '&Clear'
+    Kind = bkRetry
+    NumGlyphs = 2
+    TabOrder = 40
+    OnClick = btnYsiesClearClick
+  end
+  object btnGebakClear: TBitBtn
+    Left = 144
+    Top = 363
+    Width = 75
+    Height = 25
+    Caption = '&Clear'
+    Kind = bkRetry
+    NumGlyphs = 2
+    TabOrder = 41
+    OnClick = btnGebakClearClick
+  end
 end
