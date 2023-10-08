@@ -8,7 +8,6 @@ uses
 const
   iMAX = 10;
   BTW = 15/100;
-
 type
   TfrmWelkom = class(TForm)
     ledUserName: TLabeledEdit;
