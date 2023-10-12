@@ -4,9 +4,10 @@ Strokie Nommer: 1
  
 Produk Naam	Prys Elk		Aantal	TotalePrys
  
-Lays		R10,99 ea.	x3	R32,97
+
+Sprite		R13,99 ea.	x1	R13,99
 =========================================================================================================================================================================
  
-Sub-Totaal				R28,02
-BTW					R4,95
-Totaal					R32,97
+Sub-Totaal				R13.99
+BTW					R0
+Totaal					R13.99
