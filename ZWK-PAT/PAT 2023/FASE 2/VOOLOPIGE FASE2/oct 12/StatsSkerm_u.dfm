@@ -2,8 +2,8 @@ object frmStats: TfrmStats
   Left = 0
   Top = 0
   Caption = 'Stats'
-  ClientHeight = 407
-  ClientWidth = 560
+  ClientHeight = 406
+  ClientWidth = 556
   Color = clMoneyGreen
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
