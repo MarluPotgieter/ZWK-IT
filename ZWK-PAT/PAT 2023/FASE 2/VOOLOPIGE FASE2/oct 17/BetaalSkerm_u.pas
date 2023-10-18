@@ -68,6 +68,13 @@ end;
 procedure TfrmBetaal.btnKaartClick(Sender: TObject);
 begin
 
+  if rTOTBedrag = 0 then
+
+    ShowMessage('Kies produkte om the bestel en probeer weer');
+    frmBetaal.Hide;
+    frmVerkope.Show;
+    Exit;
+
   if rTOTBedrag >= MinKaart then
 
     ShowMessage('Aantal Betaalbaar: ' + FloatToStrF(rTOTBedrag,ffCurrency,10,2))
@@ -101,24 +108,38 @@ procedure TfrmBetaal.btnKontantClick(Sender: TObject);
 var rKontant, rKleinGeld : Real;
 begin
 
-  rKontant := StrToFloat(InputBox(' ','Tik aantal kontant in',' '));
-
-  rKleinGeld := rKontant - rTOTBedrag;
-
-  if rKleinGeld < 0 then  //toets of die kontant genoeg gaan wees om die kostes te dek
+  if rTOTBedrag = 0 then
     begin
+      ShowMessage('Kies produkte om the bestel en probeer weer');
+      frmBetaal.Hide;
+      frmVerkope.Show;
+      exit;
+    end
 
-      ShowMessage('Kontant is te min');
+  else
+    begin
 
       rKontant := StrToFloat(InputBox(' ','Tik aantal kontant in',' '));
 
       rKleinGeld := rKontant - rTOTBedrag;
 
-    end
+      if rKleinGeld < 0 then  //toets of die kontant genoeg gaan wees om die kostes te dek
+        begin
 
-  else
+          ShowMessage('Kontant is te min');
 
-    ShowMessage('Kleingeld is: ' + FloatToStrF(rKleinGeld,ffCurrency,10,2));
+          rKontant := StrToFloat(InputBox(' ','Tik aantal kontant in',' '));
+
+
+
+        end
+
+      else
+
+        ShowMessage('Kleingeld is: ' + FloatToStrF(rKleinGeld,ffCurrency,10,2));
+
+    end;
+
 
 end;
 
